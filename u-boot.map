@@ -1,0 +1,2093 @@
+Archive member included because of file (symbol)
+
+nand_sunxi/libnand(nand_for_uboot.o)
+                              disk/libdisk.o (nand_get_dev)
+nand_sunxi/libnand(nand_osal_uboot.o)
+                              nand_sunxi/libnand(nand_for_uboot.o) (NAND_Print)
+nand_sunxi/libnand(nand_fspart.o)
+                              nand_sunxi/libnand(nand_for_uboot.o) (sunxi_nand_getpart_name)
+nand_sunxi/libnand(nand_format.o)
+                              nand_sunxi/libnand(nand_for_uboot.o) (FMT_Init)
+nand_sunxi/libnand(logic_ctl.o)
+                              drivers/mtd/nand/libnand.o (LML_FlushPageCache)
+nand_sunxi/libnand(mapping.o)
+                              nand_sunxi/libnand(logic_ctl.o) (PMM_InitMapTblCache)
+nand_sunxi/libnand(mapping_base.o)
+                              nand_sunxi/libnand(mapping.o) (PMM_CalNextLogPage)
+nand_sunxi/libnand(merge.o)   nand_sunxi/libnand(mapping.o) (LML_MergeLogBlk)
+nand_sunxi/libnand(read_reclaim.o)
+                              nand_sunxi/libnand(logic_ctl.o) (LML_ReadReclaim)
+nand_sunxi/libnand(mbr.o)     nand_sunxi/libnand(logic_ctl.o) (NAND_PartInit)
+nand_sunxi/libnand(nand_phy.o)
+                              nand_sunxi/libnand(nand_for_uboot.o) (PHY_SimpleRead_Seq)
+nand_sunxi/libnand(nand_simple_r.o)
+                              nand_sunxi/libnand(nand_phy.o) (_add_cmd_list)
+nand_sunxi/libnand(nand_simple_w.o)
+                              nand_sunxi/libnand(nand_phy.o) (_write_signle_page)
+nand_sunxi/libnand(nand_scan.o)
+                              nand_sunxi/libnand(nand_for_uboot.o) (NAND_SetValidBlkRatio)
+nand_sunxi/libnand(bad_manage.o)
+                              nand_sunxi/libnand(logic_ctl.o) (LML_BadBlkManage)
+nand_sunxi/libnand(nfc_r.o)   nand_sunxi/libnand(nand_phy.o) (NFC_InitDDRParam)
+nand_sunxi/libnand(nfc_w.o)   nand_sunxi/libnand(nand_phy.o) (NFC_GetUniqueId)
+nand_sunxi/libnand(nand_id.o)
+                              nand_sunxi/libnand(nand_scan.o) (DefaultNandTbl)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+                              arch/arm/cpu/armv7/sunxi/libsunxi.o (__aeabi_uidiv)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+                              common/libcommon.o (__aeabi_idiv)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+                              drivers/mtd/nand/libnand.o (__aeabi_llsr)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+                              drivers/mtd/nand/libnand.o (__aeabi_lasr)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+                              drivers/mmc/libmmc.o (__aeabi_llsl)
+/home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+                              /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+.//libsmdt.a(cmd_update.o)    arch/arm/lib/libarm.o (update_env)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                . = 0x0
+                0x00000000                . = ALIGN (0x4)
+
+.text           0x4a000000    0x37474
+ arch/arm/cpu/armv7/start.o(.text)
+ .text          0x4a000000      0x480 arch/arm/cpu/armv7/start.o
+                0x4a000000                _start
+                0x4a000040                _end_vect
+                0x4a000040                _TEXT_BASE
+                0x4a000044                _bss_start_ofs
+                0x4a000048                _image_copy_end_ofs
+                0x4a00004c                _bss_end_ofs
+                0x4a000050                _end_ofs
+                0x4a000054                IRQ_STACK_START_IN
+                0x4a000080                relocate_code
+ *(.text)
+ .text          0x4a000480      0x320 arch/arm/cpu/armv7/libarmv7.o
+                0x4a000648                invalidate_dcache_all
+                0x4a00065c                flush_dcache_all
+                0x4a000670                invalidate_dcache_range
+                0x4a000694                flush_dcache_range
+                0x4a0006b8                arm_init_before_mmu
+                0x4a0006e0                flush_cache
+                0x4a0006e8                invalidate_icache_all
+                0x4a000700                __v7_outer_cache_enable
+                0x4a000700                v7_outer_cache_enable
+                0x4a000704                v7_outer_cache_disable
+                0x4a000704                __v7_outer_cache_disable
+                0x4a000708                __v7_outer_cache_flush_all
+                0x4a000708                v7_outer_cache_flush_all
+                0x4a00070c                v7_outer_cache_inval_all
+                0x4a00070c                __v7_outer_cache_inval_all
+                0x4a000710                v7_outer_cache_flush_range
+                0x4a000710                __v7_outer_cache_flush_range
+                0x4a000714                __v7_outer_cache_inval_range
+                0x4a000714                v7_outer_cache_inval_range
+                0x4a000718                save_boot_params_default
+                0x4a000718                save_boot_params
+                0x4a00071c                cleanup_before_linux
+                0x4a00073c                sdelay
+                0x4a000748                sr32
+                0x4a00076c                wait_on_value
+ .text          0x4a0007a0     0x5cb4 arch/arm/cpu/armv7/sunxi/libsunxi.o
+                0x4a0007a0                timer_init
+                0x4a0007c0                get_timer_masked
+                0x4a00081c                get_timer
+                0x4a000830                __udelay
+                0x4a00088c                get_ticks
+                0x4a00089c                get_tbclk
+                0x4a0008a4                tick_printf
+                0x4a0008a8                stick_printf
+                0x4a0008ec                print_boot_type
+                0x4a000968                print_cpuinfo
+                0x4a000980                watchdog_init
+                0x4a000994                clock_init
+                0x4a00099c                gpio_init
+                0x4a0009a0                sdram_init
+                0x4a0009a8                get_base
+                0x4a0009b4                is_running_in_sdram
+                0x4a0009cc                s_init
+                0x4a0009e0                reset_cpu
+                0x4a0009fc                enable_caches
+                0x4a000a00                sunxi_key_init
+                0x4a000a8c                sunxi_read_key
+                0x4a000aac                sunxi_check_recovery
+                0x4a000b24                sunxi_check_fastboot
+                0x4a000b9c                sunxi_key_hexdump
+                0x4a000c18                do_key_test
+                0x4a0016d0                fastboot_shutdown
+                0x4a001724                fastboot_is_highspeed
+                0x4a001740                fastboot_fifo_size
+                0x4a00175c                fastboot_poll
+                0x4a001ac4                fastboot_tx_status
+                0x4a001bcc                fastboot_tx
+                0x4a001bd0                fastboot_getvar
+                0x4a001bd8                fastboot_preboot
+                0x4a001be0                close_usb_clock
+                0x4a001c04                fastboot_init
+                0x4a001e10                _unsparse
+                0x4a001fe8                do_unsparse
+                0x4a0020d8                sunxi_partition_get_total_num
+                0x4a002100                sunxi_partition_get_name
+                0x4a002128                sunxi_partition_get_offset
+                0x4a002190                sunxi_partition_get_size
+                0x4a0021f8                sunxi_partition_get_offset_byname
+                0x4a002294                sunxi_partition_get_size_byname
+                0x4a002330                sunxi_partition_get_info_byname
+                0x4a0023f4                sunxi_partition_init
+                0x4a0025c8                irq_request
+                0x4a0025e0                irq_free
+                0x4a002600                irq_enable
+                0x4a002644                irq_disable
+                0x4a002688                gic_sgi_handler
+                0x4a00268c                gic_ppi_handler
+                0x4a002690                gic_spi_handler
+                0x4a0026b8                gic_clear_pending
+                0x4a0026dc                gic_irq_handler
+                0x4a002720                init_gic
+                0x4a002940                sw_cfg_get_int
+                0x4a002970                sw_cfg_get_str
+                0x4a0029c0                script_parser_init_early
+                0x4a0029e0                script_parser_init
+                0x4a002a0c                script_parser_exit
+                0x4a002a24                script_parser_fetch
+                0x4a002c4c                script_parser_patch
+                0x4a002e90                script_parser_fetch_ex
+                0x4a0030e4                script_parser_subkey_count
+                0x4a003190                script_parser_mainkey_count
+                0x4a0031ac                script_parser_mainkey_get_gpio_count
+                0x4a003294                script_parser_mainkey_get_gpio_cfg
+                0x4a003400                sw_gpio_init
+                0x4a003408                gpio_exit
+                0x4a003410                gpio_request
+                0x4a003880                gpio_request_ex
+                0x4a003920                gpio_release
+                0x4a003b18                gpio_get_all_pin_status
+                0x4a003db0                gpio_get_one_pin_status
+                0x4a003f18                gpio_set_one_pin_status
+                0x4a0040bc                gpio_set_one_pin_io_status
+                0x4a004184                gpio_set_one_pin_pull
+                0x4a00424c                gpio_set_one_pin_driver_level
+                0x4a004314                gpio_read_one_pin_value
+                0x4a0043dc                gpio_write_one_pin_value
+                0x4a0044bc                USBC_GetVbusStatus
+                0x4a0044f0                USBC_OTG_SelectMode
+                0x4a0044f4                USBC_ReadLenFromFifo
+                0x4a004520                USBC_WritePacket
+                0x4a00458c                USBC_ReadPacket
+                0x4a0045f8                USBC_ConfigFIFO_Base
+                0x4a004630                USBC_GetPortFifoStartAddr
+                0x4a004660                USBC_GetPortFifoSize
+                0x4a004684                USBC_SelectFIFO
+                0x4a004694                __USBC_ConfigFifo_TxEp
+                0x4a0046e8                __USBC_ConfigFifo_RxEp_Default
+                0x4a0046f8                __USBC_ConfigFifo_RxEp
+                0x4a00474c                USBC_ConfigFifo_Default
+                0x4a004784                USBC_ConfigFifo
+                0x4a0047c0                USBC_GetLastFrameNumber
+                0x4a0047d0                USBC_GetStatus_Dp
+                0x4a0047e8                USBC_GetStatus_Dm
+                0x4a004800                USBC_GetStatus_DpDm
+                0x4a004824                USBC_GetOtgMode_Form_ID
+                0x4a00484c                USBC_GetOtgMode_Form_BDevice
+                0x4a004864                USBC_SelectBus
+                0x4a0048ac                USBC_INT_EpPending
+                0x4a0048e8                USBC_INT_ClearEpPending
+                0x4a00493c                USBC_INT_ClearEpPendingAll
+                0x4a004974                USBC_INT_MiscPending
+                0x4a004988                USBC_INT_ClearMiscPending
+                0x4a00499c                USBC_INT_ClearMiscPendingAll
+                0x4a0049b0                USBC_INT_EnableEp
+                0x4a004a0c                USBC_INT_EnableUsbMiscUint
+                0x4a004a28                USBC_INT_DisableEp
+                0x4a004a74                USBC_INT_DisableUsbMiscUint
+                0x4a004a8c                USBC_INT_DisableEpAll
+                0x4a004abc                USBC_INT_DisableUsbMiscAll
+                0x4a004ad0                USBC_GetActiveEp
+                0x4a004ae4                USBC_SelectActiveEp
+                0x4a004af4                USBC_EnhanceSignal
+                0x4a004af8                USBC_EnterMode_TestPacket
+                0x4a004b10                USBC_EnterMode_Test_K
+                0x4a004b28                USBC_EnterMode_Test_J
+                0x4a004b40                USBC_EnterMode_Test_SE0_NAK
+                0x4a004b58                USBC_EnterMode_Idle
+                0x4a004ba4                USBC_SetWakeUp_Default
+                0x4a004ba8                USBC_EnableIdPullUp
+                0x4a004bc0                USBC_DisableIdPullUp
+                0x4a004bd8                USBC_EnableDpDmPullUp
+                0x4a004bf0                USBC_DisableDpDmPullUp
+                0x4a004c08                USBC_ForceId
+                0x4a004c40                USBC_ForceVbusValid
+                0x4a004c88                USBC_A_valid_InputSelect
+                0x4a004c8c                USBC_EnableUsbLineStateBypass
+                0x4a004c90                USBC_DisableUsbLineStateBypass
+                0x4a004c94                USBC_EnableHosc
+                0x4a004cac                USBC_DisableHosc
+                0x4a004cc0                USBC_IsVbusChange
+                0x4a004cdc                USBC_IsIdChange
+                0x4a004cf8                USBC_IsDpDmChange
+                0x4a004d14                USBC_DisableWakeIrq
+                0x4a004d28                USBC_DisableVbusChange
+                0x4a004d3c                USBC_DisableIdChange
+                0x4a004d50                USBC_DisableDpDmChange
+                0x4a004d64                USBC_EnableWakeIrq
+                0x4a004d7c                USBC_EnableVbusChange
+                0x4a004d94                USBC_EnableIdChange
+                0x4a004dac                USBC_EnableDpDmChange
+                0x4a004dc4                USBC_TestMode_ReadReg
+                0x4a004e04                USBC_PrintAllReg
+                0x4a005160                USBC_open_otg
+                0x4a0051a4                USBC_close_otg
+                0x4a0051cc                USBC_init
+                0x4a005208                USBC_exit
+                0x4a00524c                USBC_Dev_SetAddress_default
+                0x4a005260                USBC_Dev_SetAddress
+                0x4a005270                USBC_Dev_QueryTransferMode
+                0x4a005290                USBC_Dev_ConfigTransferMode
+                0x4a005300                USBC_Dev_ConectSwitch
+                0x4a005324                USBC_Dev_QueryPowerStatus
+                0x4a005338                USBC_Dev_ConfigEp
+                0x4a005444                USBC_Dev_ConfigEp_Default
+                0x4a0054ac                USBC_Dev_ConfigEpDma
+                0x4a005504                USBC_Dev_ClearEpDma
+                0x4a005564                USBC_Dev_IsEpStall
+                0x4a0055ac                USBC_Dev_EpSendStall
+                0x4a005614                USBC_Dev_EpClearStall
+                0x4a0056bc                USBC_Dev_Ctrl_IsSetupEnd
+                0x4a0056d0                USBC_Dev_Ctrl_ClearSetupEnd
+                0x4a0056e8                USBC_Dev_WriteDataStatus
+                0x4a00576c                USBC_Dev_ReadDataStatus
+                0x4a0057f0                USBC_Dev_IsReadDataReady
+                0x4a005830                USBC_Dev_IsWriteDataReady
+                0x4a00586c                USBC_Host_SetFunctionAddress_Deafult
+                0x4a0058c8                USBC_Host_SetFunctionAddress
+                0x4a005950                USBC_Host_SetHubAddress_Deafult
+                0x4a005980                USBC_Host_SetHubAddress
+                0x4a0059c8                USBC_Host_SetHPortAddress_Deafult
+                0x4a0059f8                USBC_Host_SetHPortAddress
+                0x4a005a20                USBC_Host_QueryTransferMode
+                0x4a005a40                USBC_Host_ConfigTransferMode
+                0x4a005a74                USBC_Host_ResetPort
+                0x4a005a8c                USBC_Host_ClearResetPortFlag
+                0x4a005aa4                USBC_Host_RusumePort
+                0x4a005abc                USBC_Host_ClearRusumePortFlag
+                0x4a005ad4                USBC_Host_SuspendPort
+                0x4a005aec                USBC_Host_QueryPowerStatus
+                0x4a005b00                USBC_Host_StartSession
+                0x4a005b18                USBC_Host_EndSession
+                0x4a005b30                USBC_Host_PeripheralType
+                0x4a005b50                USBC_Host_FlushFifo
+                0x4a005b98                USBC_Host_ConfigEp_Default
+                0x4a005c1c                USBC_Host_ConfigEp
+                0x4a005d7c                USBC_Host_ConfigEpDma
+                0x4a005dc0                USBC_Host_ClearEpDma
+                0x4a005e10                USBC_Host_IsEpNakTimeOut
+                0x4a005e54                USBC_Host_ClearEpNakTimeOut
+                0x4a005eac                USBC_Host_IsEpError
+                0x4a005f00                USBC_Host_ClearEpError
+                0x4a005f68                USBC_Host_IsEpStall
+                0x4a005fb4                USBC_Host_ClearEpStall
+                0x4a006020                USBC_Host_ClearEpCSR
+                0x4a00605c                USBC_Host_IsReadDataReady
+                0x4a00609c                USBC_Host_IsWriteDataReady
+                0x4a0060e4                USBC_Host_ReadDataStatus
+                0x4a006184                USBC_Host_WriteDataStatus
+                0x4a006208                USBC_Host_IsReqPktSet
+                0x4a006248                USBC_Host_StartInToken
+                0x4a00628c                USBC_Host_StopInToken
+                0x4a0062dc                USBC_Host_ConfigRqPktCount
+                0x4a0062f4                USBC_Host_ClearRqPktCount
+                0x4a006308                USBC_Host_EnablePing
+                0x4a006328                USBC_Host_DisablePing
+                0x4a006340                USBC_Host_SendCtrlStatus
+                0x4a006364                USBC_Host_SendSetupPkt
+                0x4a0063b0                USBC_PHY_SetCommonConfig
+                0x4a0063b4                USBC_PHY_SetPrivateConfig
+                0x4a0063b8                USBC_PHY_GetCommonConfig
+                0x4a0063c0                USBC_phy_Standby
+                0x4a006414                USBC_Phy_Standby_Recover
+                0x4a00641c                lowlevel_init
+                0x4a00643c                sunxi_reset
+                0x4a00643c                sunxi_pre_clean
+ .text          0x4a006454      0xb78 arch/arm/lib/libarm.o
+                0x4a0064c4                coloured_LED_init
+                0x4a0064c4                __coloured_LED_init
+                0x4a0064c8                red_LED_on
+                0x4a0064c8                __red_LED_on
+                0x4a0064cc                __red_LED_off
+                0x4a0064cc                red_LED_off
+                0x4a0064d0                green_LED_on
+                0x4a0064d0                __green_LED_on
+                0x4a0064d4                __green_LED_off
+                0x4a0064d4                green_LED_off
+                0x4a0064d8                __yellow_LED_on
+                0x4a0064d8                yellow_LED_on
+                0x4a0064dc                __yellow_LED_off
+                0x4a0064dc                yellow_LED_off
+                0x4a0064e0                blue_LED_on
+                0x4a0064e0                __blue_LED_on
+                0x4a0064e4                blue_LED_off
+                0x4a0064e4                __blue_LED_off
+                0x4a0064e8                __dram_init_banksize
+                0x4a006504                board_init_r
+                0x4a006768                hang
+                0x4a00677c                board_init_f
+                0x4a0069c4                arch_lmb_reserve
+                0x4a0069e8                do_bootm_linux
+                0x4a006ad4                do_boota_linux
+                0x4a006bb8                __flush_cache
+                0x4a006bbc                __flush_dcache_all
+                0x4a006bc8                __enable_caches
+                0x4a006cf8                __arm_init_before_mmu
+                0x4a006cfc                icache_enable
+                0x4a006d04                icache_disable
+                0x4a006d0c                icache_status
+                0x4a006d20                dcache_enable
+                0x4a006d28                dcache_disable
+                0x4a006d30                dcache_status
+                0x4a006d44                interrupt_init
+                0x4a006d60                enable_interrupts
+                0x4a006d64                disable_interrupts
+                0x4a006d6c                bad_mode
+                0x4a006d7c                show_regs
+                0x4a006ebc                do_undefined_instruction
+                0x4a006edc                do_software_interrupt
+                0x4a006efc                do_prefetch_abort
+                0x4a006f1c                do_data_abort
+                0x4a006f3c                do_not_used
+                0x4a006f5c                do_fiq
+                0x4a006f7c                do_irq
+                0x4a006f9c                do_reset
+ .text          0x4a006fcc     0xc2f8 common/libcommon.o
+                0x4a006fcc                do_go_exec
+                0x4a006fe4                do_go
+                0x4a007054                do_boota
+                0x4a00719c                do_bootd
+                0x4a007824                arch_preboot_os
+                0x4a007824                __arch_preboot_os
+                0x4a007828                do_bootm_subcommand
+                0x4a007a6c                do_bootm
+                0x4a007d00                bootm_maybe_autostart
+                0x4a007d74                do_exit
+                0x4a00821c                fastboot_flash_add_ptn
+                0x4a008258                fastboot_flash_dump_ptn
+                0x4a0082a8                fastboot_flash_find_ptn
+                0x4a008ed8                fastboot_flash_get_ptn
+                0x4a008efc                do_fastboot
+                0x4a0094e4                fastboot_flash_get_ptn_count
+                0x4a0094f4                do_fat_fsinfo
+                0x4a0095cc                do_fat_ls
+                0x4a0096d4                do_fat_fsdown
+                0x4a009844                do_fat_fsload
+                0x4a0099c4                do_help
+                0x4a009a08                do_mem_base
+                0x4a009a48                do_mem_mtest
+                0x4a009be8                do_mem_loop
+                0x4a009cdc                do_mem_md
+                0x4a009db4                do_mem_crc
+                0x4a009e5c                do_mem_cp
+                0x4a009f3c                do_mem_cmp
+                0x4a00a0c8                do_mem_mw
+                0x4a00a2c0                do_mem_nm
+                0x4a00a2d8                do_mem_mm
+                0x4a00a2f0                do_mmcops
+                0x4a00a720                do_mmcinfo
+                0x4a00a90c                do_nandboot
+                0x4a00ae64                do_nand
+                0x4a00bb04                do_env_save
+                0x4a00bbc8                do_env_print
+                0x4a00bc4c                get_env_id
+                0x4a00bc5c                _do_env_set
+                0x4a00c00c                do_env_set
+                0x4a00c028                setenv
+                0x4a00c290                envmatch
+                0x4a00c2f4                getenv_f
+                0x4a00c3b0                getenv
+                0x4a00c41c                do_sunxi_flash
+                0x4a00c544                do_false
+                0x4a00c54c                do_true
+                0x4a00c554                do_test
+                0x4a00c9c0                do_version
+                0x4a00c9f8                find_cmd_tbl
+                0x4a00ca94                find_cmd
+                0x4a00cabc                cmd_usage
+                0x4a00cb18                _do_help
+                0x4a00cc9c                var_complete
+                0x4a00cd24                cmd_auto_complete
+                0x4a00d1a0                cmd_get_data_size
+                0x4a00d294                serial_printf
+                0x4a00d2d4                fgetc
+                0x4a00d300                ftstc
+                0x4a00d32c                fputc
+                0x4a00d354                fputs
+                0x4a00d37c                fprintf
+                0x4a00d3c4                getc
+                0x4a00d3dc                tstc
+                0x4a00d3f4                putc
+                0x4a00d410                puts
+                0x4a00d42c                printf
+                0x4a00d46c                vprintf
+                0x4a00d4a0                ctrlc
+                0x4a00d4ec                disable_ctrlc
+                0x4a00d504                had_ctrlc
+                0x4a00d514                clear_ctrlc
+                0x4a00d528                dbg
+                0x4a00d534                search_device
+                0x4a00d55c                console_assign
+                0x4a00d59c                console_init_f
+                0x4a00d5ac                stdio_print_current_devices
+                0x4a00d660                console_init_r
+                0x4a00d748                sbrk
+                0x4a00d7a4                mem_malloc_init
+                0x4a00d7c8                malloc_trim
+                0x4a00d898                free
+                0x4a00dabc                cfree
+                0x4a00dac0                malloc
+                0x4a00e090                calloc
+                0x4a00e164                memalign
+                0x4a00e274                pvalloc
+                0x4a00e28c                valloc
+                0x4a00e298                realloc
+                0x4a00e6a0                malloc_usable_size
+                0x4a00e6dc                mallopt
+                0x4a00e750                env_get_addr
+                0x4a00e774                env_get_char_memory
+                0x4a00e784                env_get_char
+                0x4a00e7b8                set_default_env
+                0x4a00e85c                env_import
+                0x4a00e92c                env_relocate
+                0x4a00e95c                env_complete
+                0x4a00eb94                env_get_char_spec
+                0x4a00eba0                env_init
+                0x4a00ebbc                saveenv
+                0x4a00ebcc                env_relocate_spec
+                0x4a00ebd4                get_version
+                0x4a00ebdc                jumptable_init
+                0x4a00edc8                do_showvar
+                0x4a00f30c                simple_itoa
+                0x4a00f364                get_local_var
+                0x4a00f528                set_local_var
+                0x4a00f6e4                unset_local_var
+                0x4a00f784                new_pipe
+                0x4a00f7f4                reserved_word
+                0x4a00fab8                mapset
+                0x4a00fadc                update_ifs_map
+                0x4a00fb4c                parse_string_outer
+                0x4a010a38                parse_file_outer
+                0x4a010a7c                u_boot_hush_start
+                0x4a010b18                image_check_hcrc
+                0x4a010b68                image_check_dcrc
+                0x4a010ba4                image_multi_count
+                0x4a010bc8                image_multi_getimg
+                0x4a010c4c                getenv_yesno
+                0x4a010c74                getenv_bootm_low
+                0x4a010ca4                getenv_bootm_size
+                0x4a010d00                getenv_bootm_mapsize
+                0x4a010d30                memmove_wd
+                0x4a010d3c                genimg_print_size
+                0x4a010d6c                get_table_entry_name
+                0x4a010d98                genimg_get_os_name
+                0x4a010db0                genimg_get_arch_name
+                0x4a010dc8                genimg_get_type_name
+                0x4a010de0                genimg_get_comp_name
+                0x4a010df8                image_print_contents
+                0x4a010f70                get_table_entry_id
+                0x4a010fbc                genimg_get_os_id
+                0x4a010fd4                genimg_get_arch_id
+                0x4a010fec                genimg_get_type_id
+                0x4a011004                genimg_get_comp_id
+                0x4a01101c                genimg_get_format
+                0x4a011030                genimg_get_image
+                0x4a011034                genimg_has_config
+                0x4a01103c                boot_get_ramdisk
+                0x4a01126c                boot_ramdisk_high
+                0x4a01138c                boot_get_cmdline
+                0x4a0115cc                __show_boot_progress
+                0x4a0115cc                show_boot_progress
+                0x4a0115d0                main_loop
+                0x4a0116d8                readline_into_buffer
+                0x4a012000                readline
+                0x4a01201c                parse_line
+                0x4a0120a8                run_command
+                0x4a012454                do_run
+                0x4a0124c8                get_ram_size
+                0x4a01263c                srec_decode
+                0x4a0128a4                stdio_get_list
+                0x4a0128b0                stdio_get_by_name
+                0x4a012904                stdio_clone
+                0x4a01294c                stdio_register
+                0x4a012990                stdio_init
+                0x4a012a18                CYGACC_COMM_IF_GETC_TIMEOUT
+                0x4a012d00                CYGACC_COMM_IF_PUTC
+                0x4a012d08                parse_num
+                0x4a012e24                xyzModem_stream_open
+                0x4a012f70                xyzModem_stream_read
+                0x4a0131c0                xyzModem_stream_close
+                0x4a013210                xyzModem_stream_terminate
+                0x4a0132a4                xyzModem_error
+ .text          0x4a0132c4      0x8d8 disk/libdisk.o
+                0x4a0132c4                get_dev
+                0x4a013324                dev_print
+                0x4a01353c                init_part
+                0x4a013558                get_partition_info
+                0x4a013580                print_part
+                0x4a013aec                test_part_dos
+                0x4a013b54                print_part_dos
+                0x4a013b80                get_partition_info_dos
+ .text          0x4a013b9c      0x22c drivers/dma/libdma.o
+                0x4a013b9c                DMA_Request
+                0x4a013c24                DMA_Release
+                0x4a013c48                DMA_Setting
+                0x4a013d5c                DMA_Start
+                0x4a013d80                DMA_Stop
+                0x4a013d98                DMA_Restart
+                0x4a013db0                DMA_QueryStatus
+                0x4a013dc0                DMA_QueryChannalNo
+ .text          0x4a013dc8     0x1fe8 drivers/mmc/libmmc.o
+                0x4a013de4                __board_mmc_getcd
+                0x4a013de4                board_mmc_getcd
+                0x4a013dec                mmc_send_cmd
+                0x4a013dfc                mmc_send_status
+                0x4a013ec0                mmc_set_blocklen
+                0x4a013ef8                find_mmc_device
+                0x4a014248                mmc_read_blocks
+                0x4a0143cc                mmc_go_idle
+                0x4a014420                sd_send_op_cond
+                0x4a01457c                mmc_send_op_cond
+                0x4a0146e4                mmc_send_ext_csd
+                0x4a014738                mmc_switch
+                0x4a014794                mmc_change_freq
+                0x4a014844                mmc_switch_part
+                0x4a014880                sd_switch
+                0x4a0148f0                sd_change_freq
+                0x4a014acc                mmc_set_ios
+                0x4a014adc                mmc_set_clock
+                0x4a014af8                mmc_set_bus_width
+                0x4a014b0c                mmc_startup
+                0x4a015124                mmc_send_if_cond
+                0x4a0151a4                mmc_register
+                0x4a01522c                mmc_get_dev
+                0x4a015240                mmc_init
+                0x4a015304                cpu_mmc_init
+                0x4a01530c                print_mmc_devices
+                0x4a015370                get_mmc_num
+                0x4a015380                mmc_initialize
+                0x4a015984                ccm_get_pll5_dev_clk
+                0x4a0159d0                ccm_get_pll6_dev_clk
+                0x4a015a08                smc_set_card_clk
+                0x4a015ba8                sunxi_mmc_init
+ .text          0x4a015db0     0x5d34 drivers/mtd/nand/libnand.o
+                0x4a015db0                nand_init
+                0x4a017c98                nand_wait_ready
+                0x4a018848                nand_erase_nand
+                0x4a018c38                nand_scan_ident
+                0x4a019240                nand_scan_tail
+                0x4a0197c8                nand_scan
+                0x4a0197ec                nand_release
+                0x4a01a794                nand_update_bbt
+                0x4a01aa5c                nand_scan_bbt
+                0x4a01af1c                nand_default_bbt
+                0x4a01afd0                nand_isbad_bbt
+                0x4a01b024                nand_calculate_ecc
+                0x4a01b114                nand_correct_data
+                0x4a01b2d0                nand_erase_opts
+                0x4a01b630                nand_write_skip_bad
+                0x4a01b814                nand_read_skip_bad
+                0x4a01ba14                board_nand_init
+                0x4a01ba24                sunxi_nand_read_opts
+                0x4a01ba78                sunxi_nand_write_opts
+                0x4a01bacc                sunxi_nand_erase_opts
+                0x4a01bad4                sunxi_nand_flush_opts
+ .text          0x4a01bae4        0x0 drivers/pcmcia/libpcmcia.o
+ .text          0x4a01bae4        0x0 drivers/rtc/librtc.o
+ .text          0x4a01bae4      0x2b4 drivers/serial/libserial.o
+                0x4a01bae4                NS16550_init
+                0x4a01bb30                NS16550_reinit
+                0x4a01bb80                NS16550_putc
+                0x4a01bb94                NS16550_getc
+                0x4a01bbac                NS16550_tstc
+                0x4a01bbdc                serial_init
+                0x4a01bc4c                _serial_putc
+                0x4a01bc84                _serial_putc_raw
+                0x4a01bca0                _serial_puts
+                0x4a01bcc8                _serial_getc
+                0x4a01bce4                _serial_tstc
+                0x4a01bcf8                _serial_setbrg
+                0x4a01bd20                serial_putc
+                0x4a01bd34                serial_putc_raw
+                0x4a01bd48                serial_puts
+                0x4a01bd5c                serial_getc
+                0x4a01bd70                serial_tstc
+                0x4a01bd84                serial_setbrg
+ .text          0x4a01bd98      0x264 drivers/storage_type/libstorage_type.o
+                0x4a01bee8                sunxi_flash_handle_init
+ .text          0x4a01bffc     0x2988 fs/fat/libfat.o
+                0x4a01c030                downcase
+                0x4a01c054                disk_read
+                0x4a01c0a8                fat_register_device
+                0x4a01c1b8                get_name
+                0x4a01c27c                get_fatent
+                0x4a01c3cc                get_cluster
+                0x4a01c468                get_contents
+                0x4a01c5ec                slot2str
+                0x4a01c6b8                get_vfatname
+                0x4a01c87c                mkcksum
+                0x4a01c8ac                read_bootsectandvi
+                0x4a01c99c                do_fat_read
+                0x4a01d26c                file_fat_detectfs
+                0x4a01d3c4                file_fat_ls
+                0x4a01d3d4                file_fat_read
+                0x4a01e5ec                file_fat_write
+                0x4a01e620                file_getfsname
+                0x4a01e638                file_cd
+                0x4a01e830                file_detectfs
+                0x4a01e86c                file_ls
+                0x4a01e8f0                file_read
+ .text          0x4a01e984     0x2b8c lib/libgeneric.o
+                0x4a01e984                crc7
+                0x4a01e9b4                cyg_crc16
+                0x4a01e9fc                crc32_no_comp
+                0x4a01eadc                crc32
+                0x4a01eaf0                crc32_wd
+                0x4a01eaf4                display_options
+                0x4a01eb14                print_size
+                0x4a01ec58                print_buffer
+                0x4a01edc4                zfree
+                0x4a01edcc                zalloc
+                0x4a01eddc                zunzip
+                0x4a01eee4                gunzip
+                0x4a01efa4                hcreate_r
+                0x4a01f050                hdestroy_r
+                0x4a01f0c4                hstrstr_r
+                0x4a01f170                hmatch_r
+                0x4a01f210                hsearch_r
+                0x4a01f500                hdelete_r
+                0x4a01f588                hexport_r
+                0x4a01f7a4                himport_r
+                0x4a01fbac                lmb_dump_all
+                0x4a01fbb0                lmb_init
+                0x4a01fbd8                lmb_add
+                0x4a01fbdc                lmb_free
+                0x4a01fd00                lmb_reserve
+                0x4a01fd08                lmb_overlaps_region
+                0x4a01fd64                __lmb_alloc_base
+                0x4a01fe94                lmb_alloc_base
+                0x4a01fec8                lmb_alloc
+                0x4a01fed0                lmb_is_reserved
+                0x4a01ff30                board_lmb_reserve
+                0x4a01ff30                __board_lmb_reserve
+                0x4a01ff34                __arch_lmb_reserve
+                0x4a01ff38                ldiv
+                0x4a01ff88                string_to_ip
+                0x4a01fff8                qsort
+                0x4a0200c8                strcmp_compar
+                0x4a0200d4                strmhz
+                0x4a020140                __div64_32
+                0x4a02022c                strcpy
+                0x4a020244                strncpy
+                0x4a020268                strcat
+                0x4a020294                strncat
+                0x4a0202e8                strcmp
+                0x4a020310                strncmp
+                0x4a020354                strchr
+                0x4a020388                strlen
+                0x4a0203a8                strrchr
+                0x4a0203e4                strnlen
+                0x4a020410                strdup
+                0x4a020444                strspn
+                0x4a020484                strpbrk
+                0x4a0204c0                strtok
+                0x4a020538                strsep
+                0x4a02056c                strswab
+                0x4a0205b8                memset
+                0x4a020628                bcopy
+                0x4a020650                memcpy
+                0x4a0206bc                memmove
+                0x4a020728                memcmp
+                0x4a02075c                memscan
+                0x4a020788                strstr
+                0x4a0207e8                memchr
+                0x4a020818                udelay
+                0x4a020d84                simple_strtoul
+                0x4a020e30                strict_strtoul
+                0x4a020ea8                simple_strtol
+                0x4a020ed0                ustrtoul
+                0x4a020f44                simple_strtoull
+                0x4a021044                vsprintf
+                0x4a021494                sprintf
+                0x4a0214b8                panic
+                0x4a0214fc                __assert_fail
+ .text          0x4a021510     0x270c lib/zlib/libz.o
+                0x4a021510                zcfree
+                0x4a021518                zcalloc
+                0x4a021520                inflate_fast
+                0x4a021acc                inflate_table
+                0x4a0220a0                inflateReset
+                0x4a022120                inflateInit2_
+                0x4a022228                inflateInit_
+                0x4a02223c                inflateEnd
+                0x4a0222a8                adler32
+                0x4a0225a0                inflate
+ .text          0x4a023c1c      0xe64 nand_sunxi/libnand(nand_for_uboot.o)
+                0x4a023c1c                nand_write_uboot
+                0x4a023c50                nand_read_uboot
+                0x4a023c84                nand_get_dev
+                0x4a023ca4                nand_erase_uboot
+                0x4a023e38                nand_init_uboot
+                0x4a023e98                NAND_PhyRead
+                0x4a023e9c                NAND_PhyRead_Seq
+                0x4a023ea0                NAND_PhyRead_1K
+                0x4a023ea4                NAND_PhyWrite
+                0x4a023ea8                NAND_PhyWrite_1K
+                0x4a023eac                NAND_PhyWrite_Seq
+                0x4a023eb0                NAND_PhyErase
+                0x4a023eb4                NAND_PhyInit
+                0x4a023f64                NAND_PhyExit
+                0x4a023f74                NAND_LogicWrite
+                0x4a023f78                NAND_LogicRead
+                0x4a023f7c                NAND_Init
+                0x4a024028                NAND_Exit
+                0x4a02404c                NAND_HWScanStart
+                0x4a0240bc                NAND_HWScanStop
+                0x4a0240d8                NAND_VersionGet
+                0x4a024100                NAND_VersionCheck
+                0x4a02426c                NAND_EraseBootBlocks
+                0x4a0242d0                NAND_EraseChip
+                0x4a0246dc                NAND_BadBlockScan
+ .text          0x4a024a80      0x2f4 nand_sunxi/libnand(nand_osal_uboot.o)
+                0x4a024a80                NAND_RequestDMA
+                0x4a024a9c                NAND_ReleaseDMA
+                0x4a024abc                NAND_DMAConfigStart
+                0x4a024bc0                NAND_QueryDmaStat
+                0x4a024bd0                NAND_WaitDmaFinish
+                0x4a024bd8                NAND_ClkRequest
+                0x4a024be0                NAND_ClkRelease
+                0x4a024be4                NAND_AHBEnable
+                0x4a024c00                NAND_AHBDisable
+                0x4a024c18                NAND_ClkEnable
+                0x4a024c34                NAND_ClkDisable
+                0x4a024c4c                _GetCmuClk
+                0x4a024c80                NAND_SetClk
+                0x4a024cf0                NAND_GetClk
+                0x4a024d18                NAND_PIORequest
+                0x4a024d44                NAND_PIORelease
+                0x4a024d48                NAND_Malloc
+                0x4a024d4c                NAND_Free
+                0x4a024d50                OSAL_IrqUnLock
+                0x4a024d54                OSAL_IrqLock
+                0x4a024d58                NAND_WaitRbReady
+                0x4a024d60                NAND_IORemap
+                0x4a024d64                NAND_Print
+ .text          0x4a024d74      0x528 nand_sunxi/libnand(nand_fspart.o)
+                0x4a024e0c                sunxi_nand_getpart_num
+                0x4a024e34                sunxi_nand_getpart_name
+                0x4a024e5c                sunxi_nand_getpart_offset
+                0x4a024eb8                sunxi_nand_getpart_size
+                0x4a024f14                sunxi_nand_getpart_offset_byname
+                0x4a024fa4                sunxi_nand_getpart_size_byname
+                0x4a025034                sunxi_nand_getpart_info_byname
+                0x4a0250f0                sunxi_nand_scan_partition
+ .text          0x4a02529c     0x4080 nand_sunxi/libnand(nand_format.o)
+                0x4a025310                _CalculatePhyOpPar
+                0x4a028920                FMT_Init
+                0x4a028f10                FMT_Exit
+                0x4a028f18                FMT_FormatNand
+                0x4a029308                ClearNandStruct
+ .text          0x4a02931c     0x19ac nand_sunxi/libnand(logic_ctl.o)
+                0x4a029584                LML_CalculatePhyOpPar
+                0x4a029780                LML_VirtualPageRead
+                0x4a0298e8                LML_VirtualPageWrite
+                0x4a029a98                LML_VirtualBlkErase
+                0x4a029b60                LML_PageRead
+                0x4a029e20                LML_PageWrite
+                0x4a02a3d8                LML_FlushPageCache
+                0x4a02a418                LML_Read
+                0x4a02a69c                LML_Write
+                0x4a02a904                LML_Init
+                0x4a02aab8                LML_Exit
+                0x4a02ab30                NAND_GetDiskSize
+                0x4a02ab78                NAND_SetPartInfo
+ .text          0x4a02acc8     0x19fc nand_sunxi/libnand(mapping.o)
+                0x4a02b660                dump
+                0x4a02b704                PMM_InitMapTblCache
+                0x4a02b798                PMM_ExitMapTblCache
+                0x4a02b7dc                BMM_InitMapTblCache
+                0x4a02b8e4                BMM_ExitMapTblCache
+                0x4a02b938                BMM_SwitchMapTbl
+                0x4a02bc6c                BMM_WriteBackAllMapTbl
+                0x4a02bcf8                BMM_SetDirtyFlag
+                0x4a02bdb4                PMM_SwitchMapTbl
+                0x4a02c34c                BMM_RleaseLogBlock
+                0x4a02c490                BMM_MergeAllLogBlock
+                0x4a02c5bc                BMM_DumpMap
+ .text          0x4a02c6c4     0x11a8 nand_sunxi/libnand(mapping_base.o)
+                0x4a02c770                PMM_CalNextLogPage
+                0x4a02c81c                BMM_GetDataBlk
+                0x4a02c88c                BMM_SetDataBlk
+                0x4a02c90c                BMM_GetFreeBlk
+                0x4a02ca1c                BMM_SetFreeBlk
+                0x4a02ca94                BMM_SetLogBlk
+                0x4a02cafc                BMM_CalLogBlkType
+                0x4a02d388                BMM_GetLogBlk
+                0x4a02d58c                PMM_GetLogPage
+                0x4a02d7fc                PMM_ClearCurMapTbl
+                0x4a02d82c                PMM_GetCurMapPage
+                0x4a02d84c                PMM_SetCurMapPage
+ .text          0x4a02d86c     0x11f4 nand_sunxi/libnand(merge.o)
+                0x4a02d86c                _copy_page0
+                0x4a02da58                _log2data_swap_merge
+                0x4a02dc48                _free2log_move_merge
+                0x4a02e39c                _free2data_simple_merge
+                0x4a02e908                _get_page_map_tbl_info
+                0x4a02e9d4                LML_MergeLogBlk
+ .text          0x4a02ea60       0xfc nand_sunxi/libnand(read_reclaim.o)
+                0x4a02ea60                LML_ReadReclaim
+ .text          0x4a02eb5c      0x394 nand_sunxi/libnand(mbr.o)
+                0x4a02eb5c                nand_calc_crc32
+                0x4a02ebf0                _get_mbr
+                0x4a02ec80                _free_mbr
+                0x4a02ecb0                mbr2disks
+                0x4a02ed18                NAND_PartInit
+ .text          0x4a02eef0     0x2c70 nand_sunxi/libnand(nand_phy.o)
+                0x4a02eef0                _cal_block_in_chip
+                0x4a02ef98                _read_single_page_seq
+                0x4a02f194                _read_single_page_1K
+                0x4a02f378                _read_single_page_spare
+                0x4a02f98c                PHY_SimpleRead_Seq
+                0x4a02f994                PHY_SimpleRead_1K
+                0x4a02f99c                PHY_BlockErase
+                0x4a02fb34                _read_sectors
+                0x4a030078                _two_plane_read
+                0x4a0302ec                PHY_PageRead
+                0x4a03053c                _cal_addr_in_chip_for_spare
+                0x4a030600                _read_sectors_for_spare
+                0x4a030dd8                PHY_PageReadSpare
+                0x4a031008                PHY_FreePageCheck
+                0x4a0310d8                PHY_PageWrite
+                0x4a0312e4                _single_copy_back
+                0x4a0314ac                _multi_copy_back
+                0x4a031830                PHY_PageCopyback
+                0x4a03195c                PHY_ScanDDRParam
+                0x4a031a8c                PHY_ReadNandUniqueId
+ .text          0x4a031b60     0x106c nand_sunxi/libnand(nand_simple_r.o)
+                0x4a031b60                _add_cmd_list
+                0x4a031b98                _cal_addr_in_chip
+                0x4a031c58                _cal_real_chip
+                0x4a031d60                _cal_real_rb
+                0x4a031de4                _read_status
+                0x4a031e6c                _wait_rb_ready
+                0x4a031ea4                _wait_rb_ready_int
+                0x4a031edc                _pending_dma_irq_sem
+                0x4a031ee0                _random_seed_init
+                0x4a031ee4                _cal_random_seed
+                0x4a031efc                PHY_Init
+                0x4a031f6c                PHY_GetDefaultParam
+                0x4a0321dc                PHY_SetDefaultParam
+                0x4a032220                PHY_ChangeMode
+                0x4a03230c                PHY_Exit
+                0x4a0323e4                PHY_ResetChip
+                0x4a032494                _read_single_page
+                0x4a032970                PHY_ReadNandId
+                0x4a0329e4                PHY_CheckWp
+                0x4a032a40                _pending_rb_irq_sem
+                0x4a032a44                _do_irq
+                0x4a032a48                PHY_SimpleRead
+                0x4a032a50                PHY_SynchBank
+ .text          0x4a032bcc      0x76c nand_sunxi/libnand(nand_simple_w.o)
+                0x4a032bcc                _write_signle_page
+                0x4a032d74                _write_signle_page_seq
+                0x4a032f1c                _write_signle_page_1K
+                0x4a03308c                _erase_single_block
+                0x4a033150                PHY_SimpleWrite
+                0x4a0331d0                PHY_SimpleWrite_Seq
+                0x4a033250                PHY_SimpleWrite_1K
+                0x4a0332d0                PHY_SimpleErase
+ .text          0x4a033338      0x834 nand_sunxi/libnand(nand_scan.o)
+                0x4a033338                NAND_GetPageSize
+                0x4a03334c                NAND_GetLogicPageSize
+                0x4a033368                NAND_GetPageCntPerBlk
+                0x4a033378                NAND_GetBlkCntPerChip
+                0x4a033390                NAND_GetChipCnt
+                0x4a0333a0                NAND_GetChipConnect
+                0x4a0333b0                NAND_GetBadBlockFlagPos
+                0x4a0333b8                NAND_GetReadRetryType
+                0x4a0333c8                NAND_GetValidBlkRatio
+                0x4a0333d8                NAND_SetValidBlkRatio
+                0x4a0333f4                NAND_GetFrequencePar
+                0x4a033404                NAND_SetFrequencePar
+                0x4a03341c                NAND_GetNandVersion
+                0x4a033428                NAND_GetParam
+                0x4a0334e4                NAND_GetFlashInfo
+                0x4a033528                _SearchNandArchi
+                0x4a033728                SCN_AnalyzeNandSystem
+ .text          0x4a033b6c      0x2b4 nand_sunxi/libnand(bad_manage.o)
+                0x4a033ca4                LML_BadBlkManage
+ .text          0x4a033e20     0x1bd4 nand_sunxi/libnand(nfc_r.o)
+                0x4a033e20                NFC_InitDDRParam
+                0x4a033e34                nfc_repeat_mode_enable
+                0x4a033e5c                nfc_repeat_mode_disable
+                0x4a033e84                _wait_cmdfifo_free
+                0x4a033ed4                _wait_cmd_finish
+                0x4a033f38                _dma_config_start
+                0x4a033f3c                _wait_dma_end
+                0x4a033f88                _reset
+                0x4a033fe4                _check_ecc
+                0x4a0340b4                _disable_ecc
+                0x4a0340d0                _enable_ecc
+                0x4a034104                _enter_nand_critical
+                0x4a03410c                _exit_nand_critical
+                0x4a034114                _set_addr
+                0x4a034170                _read_in_page_mode
+                0x4a0342a4                NFC_Read
+                0x4a0342c8                nfc_set_cmd_register
+                0x4a03436c                NFC_SetRandomSeed
+                0x4a034394                NFC_RandomEnable
+                0x4a0343b4                NFC_RandomDisable
+                0x4a0343d4                NFC_GetId
+                0x4a034438                NFC_GetStatus
+                0x4a034484                NFC_ResetChip
+                0x4a0344a8                NFC_SelectChip
+                0x4a0344e0                NFC_SelectRb
+                0x4a034508                NFC_DeSelectChip
+                0x4a034510                NFC_DeSelectRb
+                0x4a034518                NFC_CheckRbReady
+                0x4a034540                NFC_ChangMode
+                0x4a034650                NFC_SetEccMode
+                0x4a034678                NFC_Init
+                0x4a034730                NFC_Exit
+                0x4a034764                _vender_get_param
+                0x4a034808                _vender_set_param
+                0x4a034aa8                _vender_pre_condition
+                0x4a034b4c                _vender_get_param_otp_hynix
+                0x4a034e18                NFC_ReadRetry
+                0x4a035134                NFC_ReadRetryInit
+                0x4a0354e0                NFC_GetOTPValue
+                0x4a03551c                NFC_GetDefaultParam
+                0x4a035630                NFC_SetDefaultParam
+                0x4a035828                NFC_ReadRetry_off
+                0x4a035878                NFC_ReadRetryExit
+                0x4a035880                NFC_RbIntEnable
+                0x4a03589c                NFC_RbIntDisable
+                0x4a0358b8                NFC_RbIntClearStatus
+                0x4a0358d0                NFC_RbIntGetStatus
+                0x4a0358e8                NFC_RbIntOccur
+                0x4a035908                NFC_GetRbSelect
+                0x4a035924                NFC_GetRbStatus
+                0x4a035960                NFC_DmaIntEnable
+                0x4a03597c                NFC_DmaIntDisable
+                0x4a035998                NFC_DmaIntClearStatus
+                0x4a0359b0                NFC_DmaIntGetStatus
+                0x4a0359c8                NFC_DmaIntOccur
+ .text          0x4a0359f4      0xcf4 nand_sunxi/libnand(nfc_w.o)
+                0x4a0359f4                _wait_twb
+                0x4a0359f8                NFC_GetUniqueId
+                0x4a035a64                NFC_Write
+                0x4a035bac                NFC_Write_Seq
+                0x4a035d34                NFC_Write_1K
+                0x4a035eac                NFC_Erase
+                0x4a035ee4                NFC_CopyBackRead
+                0x4a035f1c                NFC_CopyBackWrite
+                0x4a035f54                _read_in_page_mode_seq
+                0x4a0360e0                _read_in_page_mode_1K
+                0x4a036250                _read_in_page_mode_spare
+                0x4a036374                NFC_Read_Seq
+                0x4a0363c8                NFC_Read_1K
+                0x4a03641c                NFC_Read_Spare
+                0x4a036470                NFC_LSBInit
+                0x4a03658c                LSB_GetDefaultParam
+                0x4a0365d4                LSB_SetDefaultParam
+                0x4a0365ec                NFC_LSBEnable
+                0x4a036648                NFC_LSBDisable
+                0x4a036664                NFC_LSBExit
+ .text          0x4a0366e8        0x0 nand_sunxi/libnand(nand_id.o)
+ .text          0x4a0366e8      0x580 board/allwinner/sun7i-evb/libsun7i-evb.o
+                0x4a0366e8                fastboot_flash_partition_init
+                0x4a03692c                fastboot_partition_init
+                0x4a036930                android_misc_flash_check
+                0x4a036b20                check_android_misc
+                0x4a036b24                set_boot_type_arg
+                0x4a036b50                board_init
+                0x4a036b80                board_late_init
+                0x4a036b98                dram_init_banksize
+                0x4a036bfc                dram_init
+                0x4a036c1c                board_mmc_init
+                0x4a036c30                mmc_get_env_addr
+                0x4a036c50                checkboard
+ .text          0x4a036c68       0x20 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+                0x4a036c68                raise
+                0x4a036c84                __aeabi_unwind_cpp_pr0
+ .text          0x4a036c88      0x278 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+                0x4a036c88                __udivsi3
+                0x4a036c88                __aeabi_uidiv
+                0x4a036ee4                __aeabi_uidivmod
+ .text          0x4a036f00      0x2b0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+                0x4a036f00                __aeabi_idiv
+                0x4a036f00                __divsi3
+                0x4a037194                __aeabi_idivmod
+ .text          0x4a0371b0       0x18 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+                0x4a0371b0                __aeabi_llsr
+                0x4a0371b0                __lshrdi3
+ .text          0x4a0371c8       0x1c /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+                0x4a0371c8                __ashrdi3
+                0x4a0371c8                __aeabi_lasr
+ .text          0x4a0371e4       0x18 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+                0x4a0371e4                __ashldi3
+                0x4a0371e4                __aeabi_llsl
+ .text          0x4a0371fc        0xc /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+                0x4a0371fc                __aeabi_ldiv0
+                0x4a0371fc                __aeabi_idiv0
+ .text          0x4a037208      0x26c .//libsmdt.a(cmd_update.o)
+                0x4a037208                reverse
+                0x4a037250                parser_hextoi
+                0x4a0372e0                check_smdt_param
+                0x4a037354                update_env
+                0x4a037450                do_update
+
+.glue_7         0x4a037474        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x4a037474        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x4a037474        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x4a037474        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x4a037474        0x0
+ .iplt          0x00000000        0x0 arch/arm/cpu/armv7/start.o
+                0x4a037474                . = ALIGN (0x4)
+
+.rodata         0x4a037474     0xbe47
+ *(SORT(.rodata*))
+ .rodata        0x4a037474       0x80 arch/arm/lib/libarm.o
+ .rodata        0x4a0374f4      0x870 common/libcommon.o
+                0x4a0375ac                version_string
+                0x4a037604                default_environment
+ .rodata        0x4a037d64       0x18 disk/libdisk.o
+ .rodata        0x4a037d7c       0x50 drivers/mmc/libmmc.o
+ .rodata        0x4a037dcc      0x614 drivers/mtd/nand/libnand.o
+                0x4a037f28                nand_manuf_ids
+                0x4a037f78                nand_flash_ids
+ .rodata        0x4a0383e0       0x10 drivers/serial/libserial.o
+ .rodata        0x4a0383f0       0x18 fs/fat/libfat.o
+ .rodata        0x4a038408      0x827 lib/libgeneric.o
+                0x4a038408                crc7_syndrome_table
+                0x4a038b0e                _ctype
+                0x4a038c1e                hex_asc
+ *fill*         0x4a038c2f        0x1 00
+ .rodata        0x4a038c30      0x9cc lib/zlib/libz.o
+                0x4a0395d4                z_errmsg
+ .rodata        0x4a0395fc       0x24 nand_sunxi/libnand(nand_scan.o)
+ .rodata        0x4a039620      0x10a nand_sunxi/libnand(nand_simple_r.o)
+                0x4a03962a                random_seed
+ .rodata        0x4a03972a      0x19e nand_sunxi/libnand(nfc_r.o)
+                0x4a039734                param0x30low
+                0x4a039774                param0x30high
+                0x4a0397c4                para0
+                0x4a0397f4                para1
+                0x4a039824                para0x10
+                0x4a03982e                para0x20
+                0x4a0398a6                param0x40
+                0x4a0398ba                param0x50
+ .rodata        0x4a0398c8       0x16 arch/arm/cpu/armv7/libarmv7.o
+ .rodata        0x4a0398de        0xc arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .rodata        0x4a0398ea        0x9 nand_sunxi/libnand(mbr.o)
+ .rodata        0x4a0398f3       0x24 nand_sunxi/libnand(nand_phy.o)
+ .rodata        0x4a039917       0x11 nand_sunxi/libnand(bad_manage.o)
+ .rodata        0x4a039928        0xe .//libsmdt.a(cmd_update.o)
+ .rodata.str1.1
+                0x4a039936       0x65 arch/arm/cpu/armv7/libarmv7.o
+ .rodata.str1.1
+                0x4a03999b      0xad7 arch/arm/cpu/armv7/sunxi/libsunxi.o
+                                0xaf4 (size before relaxing)
+ .rodata.str1.1
+                0x4a03a472      0x3a5 arch/arm/lib/libarm.o
+                                0x3be (size before relaxing)
+ .rodata.str1.1
+                0x4a03a817     0x3a77 common/libcommon.o
+                               0x3d8d (size before relaxing)
+ .rodata.str1.1
+                0x4a03e28e      0x2ba disk/libdisk.o
+                                0x2e0 (size before relaxing)
+ .rodata.str1.1
+                0x4a03e548      0x17a drivers/mmc/libmmc.o
+                                0x18e (size before relaxing)
+ .rodata.str1.1
+                0x4a03e6c2      0xb1a drivers/mtd/nand/libnand.o
+                                0xb32 (size before relaxing)
+ .rodata.str1.1
+                0x00000000       0x1a drivers/serial/libserial.o
+ .rodata.str1.1
+                0x4a03f1dc       0x33 drivers/storage_type/libstorage_type.o
+ .rodata.str1.1
+                0x4a03f20f      0x2bd fs/fat/libfat.o
+                                0x305 (size before relaxing)
+ .rodata.str1.1
+                0x4a03f4cc      0x14d lib/libgeneric.o
+                                0x15f (size before relaxing)
+ .rodata.str1.1
+                0x4a03f619      0x21c lib/zlib/libz.o
+                                0x21d (size before relaxing)
+ .rodata.str1.1
+                0x4a03f835      0x752 nand_sunxi/libnand(nand_for_uboot.o)
+                                0x754 (size before relaxing)
+ .rodata.str1.1
+                0x00000000        0x9 nand_sunxi/libnand(nand_fspart.o)
+ .rodata.str1.1
+                0x4a03ff87      0xf8d nand_sunxi/libnand(nand_format.o)
+                                0xfc0 (size before relaxing)
+ .rodata.str1.1
+                0x4a040f14      0x841 nand_sunxi/libnand(logic_ctl.o)
+ .rodata.str1.1
+                0x4a041755      0x662 nand_sunxi/libnand(mapping.o)
+                                0x6b8 (size before relaxing)
+ .rodata.str1.1
+                0x4a041db7      0x3f9 nand_sunxi/libnand(mapping_base.o)
+                                0x497 (size before relaxing)
+ .rodata.str1.1
+                0x4a0421b0      0x352 nand_sunxi/libnand(merge.o)
+ .rodata.str1.1
+                0x4a042502       0x69 nand_sunxi/libnand(read_reclaim.o)
+ .rodata.str1.1
+                0x4a04256b       0x29 nand_sunxi/libnand(mbr.o)
+ .rodata.str1.1
+                0x4a042594      0x4c9 nand_sunxi/libnand(nand_phy.o)
+ .rodata.str1.1
+                0x4a042a5d      0x288 nand_sunxi/libnand(nand_simple_r.o)
+ .rodata.str1.1
+                0x4a042ce5       0xe6 nand_sunxi/libnand(nand_scan.o)
+ .rodata.str1.1
+                0x4a042dcb       0x70 nand_sunxi/libnand(bad_manage.o)
+ .rodata.str1.1
+                0x4a042e3b      0x180 nand_sunxi/libnand(nfc_r.o)
+ .rodata.str1.1
+                0x4a042fbb        0xe nand_sunxi/libnand(nfc_w.o)
+ .rodata.str1.1
+                0x4a042fc9      0x252 board/allwinner/sun7i-evb/libsun7i-evb.o
+                                0x283 (size before relaxing)
+ .rodata.str1.1
+                0x4a04321b       0x1b /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .rodata.str1.1
+                0x4a043236       0x85 .//libsmdt.a(cmd_update.o)
+                                 0x86 (size before relaxing)
+
+.hash           0x4a0432bc       0x44
+ .hash          0x4a0432bc       0x44 arch/arm/cpu/armv7/start.o
+                0x4a043300                . = ALIGN (0x4)
+
+.data           0x4a043300     0x2c18
+ *(.data)
+ .data          0x4a043300        0x0 arch/arm/cpu/armv7/start.o
+ .data          0x4a043300        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .data          0x4a043300        0x8 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .data          0x4a043308       0x28 arch/arm/lib/libarm.o
+                0x4a043308                init_sequence
+ .data          0x4a043330      0x694 common/libcommon.o
+                0x4a043504                load_addr
+                0x4a043920                env_offset
+                0x4a043928                env_size
+                0x4a04392c                env_name_spec
+                0x4a0439b8                stdio_names
+ .data          0x4a0439c4        0x0 disk/libdisk.o
+ .data          0x4a0439c4      0x100 drivers/dma/libdma.o
+                0x4a0439c4                dma_channal
+ .data          0x4a043ac4        0x4 drivers/mmc/libmmc.o
+ .data          0x4a043ac8      0xa30 drivers/mtd/nand/libnand.o
+                0x4a043ac8                nand_curr_device
+ .data          0x4a0444f8        0x0 drivers/pcmcia/libpcmcia.o
+ .data          0x4a0444f8        0x0 drivers/rtc/librtc.o
+ .data          0x4a0444f8        0x0 drivers/serial/libserial.o
+ .data          0x4a0444f8        0x0 drivers/storage_type/libstorage_type.o
+ .data          0x4a0444f8      0x208 fs/fat/libfat.o
+                0x4a0444fc                file_cwd
+ .data          0x4a044700        0x0 lib/libgeneric.o
+ .data          0x4a044700        0x0 lib/zlib/libz.o
+ .data          0x4a044700        0x0 nand_sunxi/libnand(nand_for_uboot.o)
+ .data          0x4a044700        0x0 nand_sunxi/libnand(nand_osal_uboot.o)
+ .data          0x4a044700        0x0 nand_sunxi/libnand(nand_fspart.o)
+ .data          0x4a044700       0x48 nand_sunxi/libnand(nand_format.o)
+                0x4a044700                blks_array
+ .data          0x4a044748        0x0 nand_sunxi/libnand(logic_ctl.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(mapping.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(mapping_base.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(merge.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(read_reclaim.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(mbr.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nand_phy.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nand_simple_r.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nand_simple_w.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nand_scan.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(bad_manage.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nfc_r.o)
+ .data          0x4a044748        0x0 nand_sunxi/libnand(nfc_w.o)
+ .data          0x4a044748     0x17d0 nand_sunxi/libnand(nand_id.o)
+                0x4a044748                DefaultNandTbl
+                0x4a044770                SandiskNandTbl
+                0x4a044810                PowerNandTbl
+                0x4a044860                SpansionNandTbl
+                0x4a044900                StNandTbl
+                0x4a044a90                IntelNandTbl
+                0x4a044c20                MicronNandTbl
+                0x4a044fb8                ToshibaNandTbl
+                0x4a045328                HynixNandTbl
+                0x4a0458c8                SamsungNandTbl
+ .data          0x4a045f18        0x0 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .data          0x4a045f18        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+ .data          0x4a045f18        0x0 .//libsmdt.a(cmd_update.o)
+
+.got            0x4a045f18        0x0
+ .got           0x00000000        0x0 arch/arm/cpu/armv7/start.o
+
+.got.plt        0x4a045f18        0xc
+ .got.plt       0x4a045f18        0xc arch/arm/cpu/armv7/start.o
+                0x4a045f18                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x4a045f24        0x0
+ .igot.plt      0x00000000        0x0 arch/arm/cpu/armv7/start.o
+                0x4a045f24                . = ALIGN (0x4)
+                0x4a045f24                . = .
+                0x4a045f24                __u_boot_cmd_start = .
+
+.u_boot_cmd     0x4a045f24      0x47c
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x4a045f24       0x1c arch/arm/cpu/armv7/sunxi/libsunxi.o
+                0x4a045f24                __u_boot_cmd_key_test
+ .u_boot_cmd    0x4a045f40      0x444 common/libcommon.o
+                0x4a045f40                __u_boot_cmd_reset
+                0x4a045f5c                __u_boot_cmd_go
+                0x4a045f78                __u_boot_cmd_boota
+                0x4a045f94                __u_boot_cmd_bootd
+                0x4a045fb0                __u_boot_cmd_boot
+                0x4a045fcc                __u_boot_cmd_bootm
+                0x4a045fe8                __u_boot_cmd_exit
+                0x4a046004                __u_boot_cmd_fastboot
+                0x4a046020                __u_boot_cmd_fatinfo
+                0x4a04603c                __u_boot_cmd_fatls
+                0x4a046058                __u_boot_cmd_fatdown
+                0x4a046074                __u_boot_cmd_fatload
+                0x4a046090                __u_boot_cmd_question_mark
+                0x4a0460ac                __u_boot_cmd_help
+                0x4a0460c8                __u_boot_cmd_mtest
+                0x4a0460e4                __u_boot_cmd_loop
+                0x4a046100                __u_boot_cmd_base
+                0x4a04611c                __u_boot_cmd_crc32
+                0x4a046138                __u_boot_cmd_cmp
+                0x4a046154                __u_boot_cmd_cp
+                0x4a046170                __u_boot_cmd_mw
+                0x4a04618c                __u_boot_cmd_nm
+                0x4a0461a8                __u_boot_cmd_mm
+                0x4a0461c4                __u_boot_cmd_md
+                0x4a0461e0                __u_boot_cmd_mmc
+                0x4a0461fc                __u_boot_cmd_mmcinfo
+                0x4a046218                __u_boot_cmd_nboot
+                0x4a046234                __u_boot_cmd_nand
+                0x4a046250                __u_boot_cmd_run
+                0x4a04626c                __u_boot_cmd_setenv
+                0x4a046288                __u_boot_cmd_printenv
+                0x4a0462a4                __u_boot_cmd_env
+                0x4a0462c0                __u_boot_cmd_saveenv
+                0x4a0462dc                __u_boot_cmd_sunxi_flash
+                0x4a0462f8                __u_boot_cmd_true
+                0x4a046314                __u_boot_cmd_false
+                0x4a046330                __u_boot_cmd_test
+                0x4a04634c                __u_boot_cmd_version
+                0x4a046368                __u_boot_cmd_showvar
+ .u_boot_cmd    0x4a046384       0x1c .//libsmdt.a(cmd_update.o)
+                0x4a046384                __u_boot_cmd_update
+                0x4a0463a0                __u_boot_cmd_end = .
+                0x4a0463a0                . = ALIGN (0x4)
+                0x4a0463a0                __image_copy_end = .
+
+.rel.dyn        0x4a0463a0     0x5da8
+                0x4a0463a0                __rel_dyn_start = .
+ *(.rel*)
+ .rel.got       0x00000000        0x0 arch/arm/cpu/armv7/start.o
+ .rel.plt       0x00000000        0x0 arch/arm/cpu/armv7/start.o
+ .rel.iplt      0x00000000        0x0 arch/arm/cpu/armv7/start.o
+ .rel.text      0x4a0463a0     0x42b0 arch/arm/cpu/armv7/start.o
+ .rel.u_boot_cmd
+                0x4a04a650      0x528 arch/arm/cpu/armv7/start.o
+ .rel.rodata    0x4a04ab78      0x6c8 arch/arm/cpu/armv7/start.o
+ .rel.data      0x4a04b240      0xf08 arch/arm/cpu/armv7/start.o
+                0x4a04c148                __rel_dyn_end = .
+
+.dynsym         0x4a04c148       0xc0
+                0x4a04c148                __dynsym_start = .
+ *(.dynsym)
+ .dynsym        0x4a04c148       0xc0 arch/arm/cpu/armv7/start.o
+                0x4a04c208                _end = .
+
+.bss            0x4a0463a0    0x3c0c4
+                0x4a0463a0                __bss_start = .
+ *(.bss)
+ .bss           0x4a0463a0        0x0 arch/arm/cpu/armv7/start.o
+ .bss           0x4a0463a0        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .bss           0x4a0463a0     0x4510 arch/arm/cpu/armv7/sunxi/libsunxi.o
+                0x4a0463a0                mmc_card_no
+                0x4a0463a4                uart_console
+                0x4a0463a8                storage_type
+                0x4a04a638                irq_vector
+ .bss           0x4a04a8b0        0x8 arch/arm/lib/libarm.o
+                0x4a04a8b0                monitor_flash_len
+ .bss           0x4a04a8b8     0x25e0 common/libcommon.o
+                0x4a04b1f0                mem_malloc_brk
+                0x4a04b1f4                mem_malloc_start
+                0x4a04b1f8                mem_malloc_end
+                0x4a04b234                env_htab
+                0x4a04b240                env_ptr
+                0x4a04b390                last_return_code
+                0x4a04b498                nesting_level
+                0x4a04b4a8                hist_num
+                0x4a04b4ac                hist_lines
+                0x4a04c8c0                hist_list
+                0x4a04c910                console_buffer
+                0x4a04ca50                stdio_devices
+ .bss           0x4a04ce98        0x0 disk/libdisk.o
+ .bss           0x4a04ce98        0x0 drivers/dma/libdma.o
+ .bss           0x4a04ce98      0x508 drivers/mmc/libmmc.o
+                0x4a04cea0                mmc_host
+                0x4a04cf20                mmc_dev
+ .bss           0x4a04d3a0      0x1c8 drivers/mtd/nand/libnand.o
+                0x4a04d4c0                nand_info
+ .bss           0x4a04d568        0x0 drivers/pcmcia/libpcmcia.o
+ .bss           0x4a04d568        0x0 drivers/rtc/librtc.o
+ .bss           0x4a04d568        0x0 drivers/serial/libserial.o
+ .bss           0x4a04d568       0x14 drivers/storage_type/libstorage_type.o
+                0x4a04d56c                sunxi_flash_read
+                0x4a04d570                sunxi_flash_write
+                0x4a04d574                sunxi_flash_get_size
+                0x4a04d578                sunxi_flash_exit
+ .bss           0x4a04d57c    0x30014 fs/fat/libfat.o
+                0x4a04d57c                cur_dev
+                0x4a04d580                part_offset
+                0x4a04d584                get_vfatname_block
+                0x4a05d584                do_fat_read_block
+                0x4a06d584                get_dentfromdir_block
+ .bss           0x4a07d590        0x8 lib/libgeneric.o
+                0x4a07d590                errno
+                0x4a07d594                ___strtok
+ .bss           0x4a07d598        0x0 lib/zlib/libz.o
+ .bss           0x4a07d598       0x70 nand_sunxi/libnand(nand_for_uboot.o)
+ .bss           0x4a07d608        0x4 nand_sunxi/libnand(nand_osal_uboot.o)
+                0x4a07d608                hDMA
+ .bss           0x4a07d60c     0x4000 nand_sunxi/libnand(nand_fspart.o)
+                0x4a07d60c                BOOTFSMBR_buf
+ .bss           0x4a08160c       0x10 nand_sunxi/libnand(nand_format.o)
+                0x4a081610                lsb_page
+                0x4a081614                DIE0_FIRST_BLK_NUM
+                0x4a081618                DieCntOfNand
+ *fill*         0x4a08161c        0x4 00
+ .bss           0x4a081620      0x310 nand_sunxi/libnand(logic_ctl.o)
+                0x4a081620                NandDriverInfo
+                0x4a081674                NandPartInfo
+                0x4a0817b4                nand_part_cnt
+                0x4a0817b8                nand_disk_array
+                0x4a0818a8                ZoneTblPstInfo
+                0x4a081928                LogicArchiPar
+ .bss           0x4a081930       0xac nand_sunxi/libnand(mapping.o)
+                0x4a081930                PageMapTblCachePool
+                0x4a081964                BlkMapTblCachePool
+ .bss           0x4a0819dc        0x0 nand_sunxi/libnand(mapping_base.o)
+ .bss           0x4a0819dc        0x0 nand_sunxi/libnand(merge.o)
+ .bss           0x4a0819dc        0x0 nand_sunxi/libnand(read_reclaim.o)
+ .bss           0x4a0819dc       0x54 nand_sunxi/libnand(mbr.o)
+                0x4a0819dc                mbr
+                0x4a0819e0                part_secur
+ .bss           0x4a081a30        0x0 nand_sunxi/libnand(nand_phy.o)
+ .bss           0x4a081a30       0x90 nand_sunxi/libnand(nand_simple_r.o)
+                0x4a081a30                NandStorageInfo
+                0x4a081a8c                RetryCount
+                0x4a081aac                PageCachePool
+ .bss           0x4a081ac0        0x0 nand_sunxi/libnand(nand_simple_w.o)
+ .bss           0x4a081ac0        0x0 nand_sunxi/libnand(nand_scan.o)
+ .bss           0x4a081ac0        0x0 nand_sunxi/libnand(bad_manage.o)
+ .bss           0x4a081ac0      0x544 nand_sunxi/libnand(nfc_r.o)
+                0x4a081ac0                ddr_param
+                0x4a081ae0                nand_io_base
+                0x4a081ae4                pagesize
+                0x4a081ae8                read_retry_mode
+                0x4a081ae9                read_retry_cycle
+                0x4a081aea                read_retry_reg_num
+                0x4a081aec                read_retry_val
+                0x4a081d6c                read_retry_default_val
+                0x4a081dec                read_retry_reg_adr
+                0x4a081dfc                hynix_read_retry_otp_value
+                0x4a081ffc                irq_value
+                0x4a082000                nand_board_version
+ .bss           0x4a082004       0x19 nand_sunxi/libnand(nfc_w.o)
+                0x4a082004                lsb_mode_reg_num
+                0x4a082005                lsb_mode_reg_adr
+                0x4a08200d                lsb_mode_val
+                0x4a082015                lsb_mode_default_val
+ .bss           0x4a08201d        0x0 nand_sunxi/libnand(nand_id.o)
+ *fill*         0x4a08201d        0x3 00
+ .bss           0x4a082020      0x444 board/allwinner/sun7i-evb/libsun7i-evb.o
+                0x4a082460                recovery_notcheck_display
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .bss           0x4a082464        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+ .bss           0x4a082464        0x0 .//libsmdt.a(cmd_update.o)
+                0x4a082464                . = ALIGN (0x4)
+                0x4a082464                __bss_end__ = .
+
+.dynbss         0x4a04c208        0x0 load address 0x4a082464
+ .dynbss        0x00000000        0x0 arch/arm/cpu/armv7/start.o
+
+/DISCARD/
+ *(.dynstr*)
+ *(.dynamic*)
+ *(.plt*)
+ *(.interp*)
+ *(.gnu*)
+Address of section .text set to 0x4a000000
+LOAD arch/arm/cpu/armv7/start.o
+START GROUP
+LOAD api/libapi.o
+LOAD arch/arm/cpu/armv7/libarmv7.o
+LOAD arch/arm/cpu/armv7/sunxi/libsunxi.o
+LOAD arch/arm/lib/libarm.o
+LOAD common/libcommon.o
+LOAD disk/libdisk.o
+LOAD drivers/bios_emulator/libatibiosemu.o
+LOAD drivers/block/libblock.o
+LOAD drivers/dma/libdma.o
+LOAD drivers/fpga/libfpga.o
+LOAD drivers/gpio/libgpio.o
+LOAD drivers/hwmon/libhwmon.o
+LOAD drivers/i2c/libi2c.o
+LOAD drivers/input/libinput.o
+LOAD drivers/misc/libmisc.o
+LOAD drivers/mmc/libmmc.o
+LOAD drivers/mtd/libmtd.o
+LOAD drivers/mtd/nand/libnand.o
+LOAD drivers/mtd/onenand/libonenand.o
+LOAD drivers/mtd/spi/libspi_flash.o
+LOAD drivers/mtd/ubi/libubi.o
+LOAD drivers/net/libnet.o
+LOAD drivers/net/phy/libphy.o
+LOAD drivers/pci/libpci.o
+LOAD drivers/pcmcia/libpcmcia.o
+LOAD drivers/power/libpower.o
+LOAD drivers/rtc/librtc.o
+LOAD drivers/serial/libserial.o
+LOAD drivers/spi/libspi.o
+LOAD drivers/storage_type/libstorage_type.o
+LOAD drivers/twserial/libtws.o
+LOAD drivers/usb/eth/libusb_eth.o
+LOAD drivers/usb/gadget/libusb_gadget.o
+LOAD drivers/usb/host/libusb_host.o
+LOAD drivers/usb/musb/libusb_musb.o
+LOAD drivers/usb/phy/libusb_phy.o
+LOAD drivers/video/libvideo.o
+LOAD drivers/watchdog/libwatchdog.o
+LOAD fs/cramfs/libcramfs.o
+LOAD fs/ext2/libext2fs.o
+LOAD fs/fat/libfat.o
+LOAD fs/fdos/libfdos.o
+LOAD fs/jffs2/libjffs2.o
+LOAD fs/reiserfs/libreiserfs.o
+LOAD fs/ubifs/libubifs.o
+LOAD fs/yaffs2/libyaffs2.o
+LOAD lib/libfdt/libfdt.o
+LOAD lib/libgeneric.o
+LOAD lib/lzma/liblzma.o
+LOAD lib/lzo/liblzo.o
+LOAD lib/zlib/libz.o
+LOAD nand_sunxi/libnand
+LOAD net/libnet.o
+LOAD post/libpost.o
+LOAD board/allwinner/sun7i-evb/libsun7i-evb.o
+END GROUP
+LOAD /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+LOAD /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a
+LOAD .//libsmdt.a
+OUTPUT(u-boot elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x1b arch/arm/cpu/armv7/start.o
+ .ARM.attributes
+                0x0000001b       0x2b arch/arm/cpu/armv7/libarmv7.o
+ .ARM.attributes
+                0x00000046       0x2b arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .ARM.attributes
+                0x00000071       0x2b arch/arm/lib/libarm.o
+ .ARM.attributes
+                0x0000009c       0x2b common/libcommon.o
+ .ARM.attributes
+                0x000000c7       0x2b disk/libdisk.o
+ .ARM.attributes
+                0x000000f2       0x2b drivers/dma/libdma.o
+ .ARM.attributes
+                0x0000011d       0x2b drivers/mmc/libmmc.o
+ .ARM.attributes
+                0x00000148       0x2b drivers/mtd/nand/libnand.o
+ .ARM.attributes
+                0x00000173       0x29 drivers/pcmcia/libpcmcia.o
+ .ARM.attributes
+                0x0000019c       0x29 drivers/rtc/librtc.o
+ .ARM.attributes
+                0x000001c5       0x2b drivers/serial/libserial.o
+ .ARM.attributes
+                0x000001f0       0x2b drivers/storage_type/libstorage_type.o
+ .ARM.attributes
+                0x0000021b       0x2b fs/fat/libfat.o
+ .ARM.attributes
+                0x00000246       0x2b lib/libgeneric.o
+ .ARM.attributes
+                0x00000271       0x2b lib/zlib/libz.o
+ .ARM.attributes
+                0x0000029c       0x2b nand_sunxi/libnand(nand_for_uboot.o)
+ .ARM.attributes
+                0x000002c7       0x2b nand_sunxi/libnand(nand_osal_uboot.o)
+ .ARM.attributes
+                0x000002f2       0x2b nand_sunxi/libnand(nand_fspart.o)
+ .ARM.attributes
+                0x0000031d       0x2b nand_sunxi/libnand(nand_format.o)
+ .ARM.attributes
+                0x00000348       0x2b nand_sunxi/libnand(logic_ctl.o)
+ .ARM.attributes
+                0x00000373       0x2b nand_sunxi/libnand(mapping.o)
+ .ARM.attributes
+                0x0000039e       0x2b nand_sunxi/libnand(mapping_base.o)
+ .ARM.attributes
+                0x000003c9       0x29 nand_sunxi/libnand(merge.o)
+ .ARM.attributes
+                0x000003f2       0x29 nand_sunxi/libnand(read_reclaim.o)
+ .ARM.attributes
+                0x0000041b       0x29 nand_sunxi/libnand(mbr.o)
+ .ARM.attributes
+                0x00000444       0x2b nand_sunxi/libnand(nand_phy.o)
+ .ARM.attributes
+                0x0000046f       0x2b nand_sunxi/libnand(nand_simple_r.o)
+ .ARM.attributes
+                0x0000049a       0x29 nand_sunxi/libnand(nand_simple_w.o)
+ .ARM.attributes
+                0x000004c3       0x2b nand_sunxi/libnand(nand_scan.o)
+ .ARM.attributes
+                0x000004ee       0x29 nand_sunxi/libnand(bad_manage.o)
+ .ARM.attributes
+                0x00000517       0x2b nand_sunxi/libnand(nfc_r.o)
+ .ARM.attributes
+                0x00000542       0x2b nand_sunxi/libnand(nfc_w.o)
+ .ARM.attributes
+                0x0000056d       0x29 nand_sunxi/libnand(nand_id.o)
+ .ARM.attributes
+                0x00000596       0x29 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .ARM.attributes
+                0x000005bf       0x2b /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .ARM.attributes
+                0x000005ea       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000060d       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000630       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .ARM.attributes
+                0x00000653       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .ARM.attributes
+                0x00000676       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x00000699       0x23 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+ .ARM.attributes
+                0x000006bc       0x29 .//libsmdt.a(cmd_update.o)
+
+.comment        0x00000000       0x64
+ .comment       0x00000000       0x64 arch/arm/cpu/armv7/libarmv7.o
+                                0x12f (size before relaxing)
+ .comment       0x00000000      0x586 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .comment       0x00000000      0x25e arch/arm/lib/libarm.o
+ .comment       0x00000000      0xbd6 common/libcommon.o
+ .comment       0x00000000       0xca disk/libdisk.o
+ .comment       0x00000000       0x65 drivers/dma/libdma.o
+ .comment       0x00000000       0xca drivers/mmc/libmmc.o
+ .comment       0x00000000      0x2c3 drivers/mtd/nand/libnand.o
+ .comment       0x00000000       0xca drivers/pcmcia/libpcmcia.o
+ .comment       0x00000000       0x65 drivers/rtc/librtc.o
+ .comment       0x00000000       0xca drivers/serial/libserial.o
+ .comment       0x00000000       0x65 drivers/storage_type/libstorage_type.o
+ .comment       0x00000000      0x12f fs/fat/libfat.o
+ .comment       0x00000000      0x6b5 lib/libgeneric.o
+ .comment       0x00000000       0x65 lib/zlib/libz.o
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_for_uboot.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_osal_uboot.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_fspart.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_format.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(logic_ctl.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(mapping.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(mapping_base.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(merge.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(read_reclaim.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(mbr.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_phy.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_simple_r.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_simple_w.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_scan.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(bad_manage.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nfc_r.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nfc_w.o)
+ .comment       0x00000000       0x65 nand_sunxi/libnand(nand_id.o)
+ .comment       0x00000000       0x65 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .comment       0x00000000       0x65 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .comment       0x00000000       0x65 .//libsmdt.a(cmd_update.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/armv7/libarmv7.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .note.GNU-stack
+                0x00000000        0x0 arch/arm/lib/libarm.o
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.o
+ .note.GNU-stack
+                0x00000000        0x0 disk/libdisk.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/dma/libdma.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/mmc/libmmc.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/mtd/nand/libnand.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/pcmcia/libpcmcia.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/rtc/librtc.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/serial/libserial.o
+ .note.GNU-stack
+                0x00000000        0x0 drivers/storage_type/libstorage_type.o
+ .note.GNU-stack
+                0x00000000        0x0 fs/fat/libfat.o
+ .note.GNU-stack
+                0x00000000        0x0 lib/libgeneric.o
+ .note.GNU-stack
+                0x00000000        0x0 lib/zlib/libz.o
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_for_uboot.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_osal_uboot.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_fspart.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_format.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(logic_ctl.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(mapping.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(mapping_base.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(merge.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(read_reclaim.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(mbr.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_phy.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_simple_r.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_simple_w.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_scan.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(bad_manage.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nfc_r.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nfc_w.o)
+ .note.GNU-stack
+                0x00000000        0x0 nand_sunxi/libnand(nand_id.o)
+ .note.GNU-stack
+                0x00000000        0x0 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_lshrdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashrdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_ashldi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_dvmd_lnx.o)
+ .note.GNU-stack
+                0x00000000        0x0 .//libsmdt.a(cmd_update.o)
+
+.debug_line     0x00000000    0x12a21
+ .debug_line    0x00000000       0xcc arch/arm/cpu/armv7/start.o
+ .debug_line    0x000000cc      0x27b arch/arm/cpu/armv7/libarmv7.o
+ .debug_line    0x00000347     0x20fe arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_line    0x00002445      0x8dd arch/arm/lib/libarm.o
+ .debug_line    0x00002d22     0x4703 common/libcommon.o
+ .debug_line    0x00007425      0x39c disk/libdisk.o
+ .debug_line    0x000077c1      0x156 drivers/dma/libdma.o
+ .debug_line    0x00007917      0xba6 drivers/mmc/libmmc.o
+ .debug_line    0x000084bd     0x1d85 drivers/mtd/nand/libnand.o
+ .debug_line    0x0000a242       0x3a drivers/pcmcia/libpcmcia.o
+ .debug_line    0x0000a27c       0x1d drivers/rtc/librtc.o
+ .debug_line    0x0000a299      0x325 drivers/serial/libserial.o
+ .debug_line    0x0000a5be      0x248 drivers/storage_type/libstorage_type.o
+ .debug_line    0x0000a806      0xc27 fs/fat/libfat.o
+ .debug_line    0x0000b42d     0x19f0 lib/libgeneric.o
+ .debug_line    0x0000ce1d      0xb4e lib/zlib/libz.o
+ .debug_line    0x0000d96b      0x63c nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_line    0x0000dfa7      0x1fb nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_line    0x0000e1a2      0x1e8 nand_sunxi/libnand(nand_fspart.o)
+ .debug_line    0x0000e38a      0xcc5 nand_sunxi/libnand(nand_format.o)
+ .debug_line    0x0000f04f      0x6a9 nand_sunxi/libnand(logic_ctl.o)
+ .debug_line    0x0000f6f8      0x595 nand_sunxi/libnand(mapping.o)
+ .debug_line    0x0000fc8d      0x3a3 nand_sunxi/libnand(mapping_base.o)
+ .debug_line    0x00010030      0x383 nand_sunxi/libnand(merge.o)
+ .debug_line    0x000103b3       0xd9 nand_sunxi/libnand(read_reclaim.o)
+ .debug_line    0x0001048c      0x1a2 nand_sunxi/libnand(mbr.o)
+ .debug_line    0x0001062e      0x915 nand_sunxi/libnand(nand_phy.o)
+ .debug_line    0x00010f43      0x46d nand_sunxi/libnand(nand_simple_r.o)
+ .debug_line    0x000113b0      0x1f7 nand_sunxi/libnand(nand_simple_w.o)
+ .debug_line    0x000115a7      0x2af nand_sunxi/libnand(nand_scan.o)
+ .debug_line    0x00011856      0x134 nand_sunxi/libnand(bad_manage.o)
+ .debug_line    0x0001198a      0x80d nand_sunxi/libnand(nfc_r.o)
+ .debug_line    0x00012197      0x3ae nand_sunxi/libnand(nfc_w.o)
+ .debug_line    0x00012545       0xa6 nand_sunxi/libnand(nand_id.o)
+ .debug_line    0x000125eb      0x291 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_line    0x0001287c       0x41 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_line    0x000128bd      0x164 .//libsmdt.a(cmd_update.o)
+
+.debug_info     0x00000000    0x467fe
+ .debug_info    0x00000000       0x72 arch/arm/cpu/armv7/start.o
+ .debug_info    0x00000072      0xaa5 arch/arm/cpu/armv7/libarmv7.o
+ .debug_info    0x00000b17     0xa116 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_info    0x0000ac2d     0x2215 arch/arm/lib/libarm.o
+ .debug_info    0x0000ce42    0x10965 common/libcommon.o
+ .debug_info    0x0001d7a7      0xec2 disk/libdisk.o
+ .debug_info    0x0001e669      0x6e9 drivers/dma/libdma.o
+ .debug_info    0x0001ed52     0x3665 drivers/mmc/libmmc.o
+ .debug_info    0x000223b7     0xa224 drivers/mtd/nand/libnand.o
+ .debug_info    0x0002c5db       0xe6 drivers/pcmcia/libpcmcia.o
+ .debug_info    0x0002c6c1       0x73 drivers/rtc/librtc.o
+ .debug_info    0x0002c734      0xe0a drivers/serial/libserial.o
+ .debug_info    0x0002d53e     0x10de drivers/storage_type/libstorage_type.o
+ .debug_info    0x0002e61c     0x2d35 fs/fat/libfat.o
+ .debug_info    0x00031351     0x3629 lib/libgeneric.o
+ .debug_info    0x0003497a     0x1040 lib/zlib/libz.o
+ .debug_info    0x000359ba     0x17ab nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_info    0x00037165      0x680 nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_info    0x000377e5      0x5ed nand_sunxi/libnand(nand_fspart.o)
+ .debug_info    0x00037dd2     0x2241 nand_sunxi/libnand(nand_format.o)
+ .debug_info    0x0003a013     0x142e nand_sunxi/libnand(logic_ctl.o)
+ .debug_info    0x0003b441     0x12d6 nand_sunxi/libnand(mapping.o)
+ .debug_info    0x0003c717      0xe55 nand_sunxi/libnand(mapping_base.o)
+ .debug_info    0x0003d56c      0xc4c nand_sunxi/libnand(merge.o)
+ .debug_info    0x0003e1b8      0x709 nand_sunxi/libnand(read_reclaim.o)
+ .debug_info    0x0003e8c1      0xb1a nand_sunxi/libnand(mbr.o)
+ .debug_info    0x0003f3db     0x1369 nand_sunxi/libnand(nand_phy.o)
+ .debug_info    0x00040744     0x1031 nand_sunxi/libnand(nand_simple_r.o)
+ .debug_info    0x00041775      0x85b nand_sunxi/libnand(nand_simple_w.o)
+ .debug_info    0x00041fd0      0x930 nand_sunxi/libnand(nand_scan.o)
+ .debug_info    0x00042900      0x983 nand_sunxi/libnand(bad_manage.o)
+ .debug_info    0x00043283     0x14ab nand_sunxi/libnand(nfc_r.o)
+ .debug_info    0x0004472e      0xc8f nand_sunxi/libnand(nfc_w.o)
+ .debug_info    0x000453bd      0x3fe nand_sunxi/libnand(nand_id.o)
+ .debug_info    0x000457bb      0xbbe board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_info    0x00046379       0xb4 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_info    0x0004642d      0x3d1 .//libsmdt.a(cmd_update.o)
+
+.debug_abbrev   0x00000000     0xd349
+ .debug_abbrev  0x00000000       0x14 arch/arm/cpu/armv7/start.o
+ .debug_abbrev  0x00000014      0x393 arch/arm/cpu/armv7/libarmv7.o
+ .debug_abbrev  0x000003a7     0x1ad0 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_abbrev  0x00001e77      0x961 arch/arm/lib/libarm.o
+ .debug_abbrev  0x000027d8     0x3bbd common/libcommon.o
+ .debug_abbrev  0x00006395      0x430 disk/libdisk.o
+ .debug_abbrev  0x000067c5      0x186 drivers/dma/libdma.o
+ .debug_abbrev  0x0000694b      0x8e5 drivers/mmc/libmmc.o
+ .debug_abbrev  0x00007230     0x11cc drivers/mtd/nand/libnand.o
+ .debug_abbrev  0x000083fc       0x54 drivers/pcmcia/libpcmcia.o
+ .debug_abbrev  0x00008450       0x2a drivers/rtc/librtc.o
+ .debug_abbrev  0x0000847a      0x352 drivers/serial/libserial.o
+ .debug_abbrev  0x000087cc      0x254 drivers/storage_type/libstorage_type.o
+ .debug_abbrev  0x00008a20      0x81c fs/fat/libfat.o
+ .debug_abbrev  0x0000923c     0x1393 lib/libgeneric.o
+ .debug_abbrev  0x0000a5cf      0x335 lib/zlib/libz.o
+ .debug_abbrev  0x0000a904      0x326 nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_abbrev  0x0000ac2a      0x1e8 nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_abbrev  0x0000ae12      0x1b6 nand_sunxi/libnand(nand_fspart.o)
+ .debug_abbrev  0x0000afc8      0x274 nand_sunxi/libnand(nand_format.o)
+ .debug_abbrev  0x0000b23c      0x25b nand_sunxi/libnand(logic_ctl.o)
+ .debug_abbrev  0x0000b497      0x333 nand_sunxi/libnand(mapping.o)
+ .debug_abbrev  0x0000b7ca      0x302 nand_sunxi/libnand(mapping_base.o)
+ .debug_abbrev  0x0000bacc      0x1a5 nand_sunxi/libnand(merge.o)
+ .debug_abbrev  0x0000bc71       0xd6 nand_sunxi/libnand(read_reclaim.o)
+ .debug_abbrev  0x0000bd47      0x19a nand_sunxi/libnand(mbr.o)
+ .debug_abbrev  0x0000bee1      0x1fd nand_sunxi/libnand(nand_phy.o)
+ .debug_abbrev  0x0000c0de      0x2fc nand_sunxi/libnand(nand_simple_r.o)
+ .debug_abbrev  0x0000c3da      0x15d nand_sunxi/libnand(nand_simple_w.o)
+ .debug_abbrev  0x0000c537      0x1b0 nand_sunxi/libnand(nand_scan.o)
+ .debug_abbrev  0x0000c6e7      0x198 nand_sunxi/libnand(bad_manage.o)
+ .debug_abbrev  0x0000c87f      0x32a nand_sunxi/libnand(nfc_r.o)
+ .debug_abbrev  0x0000cba9      0x1ce nand_sunxi/libnand(nfc_w.o)
+ .debug_abbrev  0x0000cd77       0xbf nand_sunxi/libnand(nand_id.o)
+ .debug_abbrev  0x0000ce36      0x340 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_abbrev  0x0000d176       0x67 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_abbrev  0x0000d1dd      0x16c .//libsmdt.a(cmd_update.o)
+
+.debug_aranges  0x00000000      0xd20
+ .debug_aranges
+                0x00000000       0x20 arch/arm/cpu/armv7/start.o
+ .debug_aranges
+                0x00000020       0x60 arch/arm/cpu/armv7/libarmv7.o
+ .debug_aranges
+                0x00000080      0x1e0 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_aranges
+                0x00000260       0xc0 arch/arm/lib/libarm.o
+ .debug_aranges
+                0x00000320      0x360 common/libcommon.o
+ .debug_aranges
+                0x00000680       0x40 disk/libdisk.o
+ .debug_aranges
+                0x000006c0       0x20 drivers/dma/libdma.o
+ .debug_aranges
+                0x000006e0       0x40 drivers/mmc/libmmc.o
+ .debug_aranges
+                0x00000720       0xc0 drivers/mtd/nand/libnand.o
+ .debug_aranges
+                0x000007e0       0x40 drivers/serial/libserial.o
+ .debug_aranges
+                0x00000820       0x20 drivers/storage_type/libstorage_type.o
+ .debug_aranges
+                0x00000840       0x60 fs/fat/libfat.o
+ .debug_aranges
+                0x000008a0      0x1e0 lib/libgeneric.o
+ .debug_aranges
+                0x00000a80       0x20 lib/zlib/libz.o
+ .debug_aranges
+                0x00000aa0       0x20 nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_aranges
+                0x00000ac0       0x20 nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_aranges
+                0x00000ae0       0x20 nand_sunxi/libnand(nand_fspart.o)
+ .debug_aranges
+                0x00000b00       0x20 nand_sunxi/libnand(nand_format.o)
+ .debug_aranges
+                0x00000b20       0x20 nand_sunxi/libnand(logic_ctl.o)
+ .debug_aranges
+                0x00000b40       0x20 nand_sunxi/libnand(mapping.o)
+ .debug_aranges
+                0x00000b60       0x20 nand_sunxi/libnand(mapping_base.o)
+ .debug_aranges
+                0x00000b80       0x20 nand_sunxi/libnand(merge.o)
+ .debug_aranges
+                0x00000ba0       0x20 nand_sunxi/libnand(read_reclaim.o)
+ .debug_aranges
+                0x00000bc0       0x20 nand_sunxi/libnand(mbr.o)
+ .debug_aranges
+                0x00000be0       0x20 nand_sunxi/libnand(nand_phy.o)
+ .debug_aranges
+                0x00000c00       0x20 nand_sunxi/libnand(nand_simple_r.o)
+ .debug_aranges
+                0x00000c20       0x20 nand_sunxi/libnand(nand_simple_w.o)
+ .debug_aranges
+                0x00000c40       0x20 nand_sunxi/libnand(nand_scan.o)
+ .debug_aranges
+                0x00000c60       0x20 nand_sunxi/libnand(bad_manage.o)
+ .debug_aranges
+                0x00000c80       0x20 nand_sunxi/libnand(nfc_r.o)
+ .debug_aranges
+                0x00000ca0       0x20 nand_sunxi/libnand(nfc_w.o)
+ .debug_aranges
+                0x00000cc0       0x20 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_aranges
+                0x00000ce0       0x20 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_aranges
+                0x00000d00       0x20 .//libsmdt.a(cmd_update.o)
+
+.debug_frame    0x00000000     0x72d4
+ .debug_frame   0x00000000      0x1e0 arch/arm/cpu/armv7/libarmv7.o
+ .debug_frame   0x000001e0     0x1260 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_frame   0x00001440      0x434 arch/arm/lib/libarm.o
+ .debug_frame   0x00001874     0x1884 common/libcommon.o
+ .debug_frame   0x000030f8      0x170 disk/libdisk.o
+ .debug_frame   0x00003268       0x9c drivers/dma/libdma.o
+ .debug_frame   0x00003304      0x438 drivers/mmc/libmmc.o
+ .debug_frame   0x0000373c      0xa90 drivers/mtd/nand/libnand.o
+ .debug_frame   0x000041cc      0x188 drivers/serial/libserial.o
+ .debug_frame   0x00004354      0x128 drivers/storage_type/libstorage_type.o
+ .debug_frame   0x0000447c      0x3d0 fs/fat/libfat.o
+ .debug_frame   0x0000484c      0x90c lib/libgeneric.o
+ .debug_frame   0x00005158      0x11c lib/zlib/libz.o
+ .debug_frame   0x00005274      0x268 nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_frame   0x000054dc      0x1c4 nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_frame   0x000056a0      0x104 nand_sunxi/libnand(nand_fspart.o)
+ .debug_frame   0x000057a4      0x22c nand_sunxi/libnand(nand_format.o)
+ .debug_frame   0x000059d0      0x250 nand_sunxi/libnand(logic_ctl.o)
+ .debug_frame   0x00005c20      0x210 nand_sunxi/libnand(mapping.o)
+ .debug_frame   0x00005e30      0x18c nand_sunxi/libnand(mapping_base.o)
+ .debug_frame   0x00005fbc       0xf0 nand_sunxi/libnand(merge.o)
+ .debug_frame   0x000060ac       0x3c nand_sunxi/libnand(read_reclaim.o)
+ .debug_frame   0x000060e8       0xac nand_sunxi/libnand(mbr.o)
+ .debug_frame   0x00006194      0x2cc nand_sunxi/libnand(nand_phy.o)
+ .debug_frame   0x00006460      0x260 nand_sunxi/libnand(nand_simple_r.o)
+ .debug_frame   0x000066c0      0x124 nand_sunxi/libnand(nand_simple_w.o)
+ .debug_frame   0x000067e4      0x148 nand_sunxi/libnand(nand_scan.o)
+ .debug_frame   0x0000692c       0x54 nand_sunxi/libnand(bad_manage.o)
+ .debug_frame   0x00006980      0x4bc nand_sunxi/libnand(nfc_r.o)
+ .debug_frame   0x00006e3c      0x254 nand_sunxi/libnand(nfc_w.o)
+ .debug_frame   0x00007090      0x134 board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_frame   0x000071c4       0x38 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_frame   0x000071fc       0x20 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000721c       0x20 /home/server/sourcecode/a20evb_dvk/lichee/out/android/common/buildroot/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000723c       0x98 .//libsmdt.a(cmd_update.o)
+
+.debug_str      0x00000000     0xc771
+ .debug_str     0x00000000      0x3b1 arch/arm/cpu/armv7/libarmv7.o
+                                0x656 (size before relaxing)
+ .debug_str     0x000003b1     0x337b arch/arm/cpu/armv7/sunxi/libsunxi.o
+                               0x46d3 (size before relaxing)
+ .debug_str     0x0000372c      0x82e arch/arm/lib/libarm.o
+                               0x1406 (size before relaxing)
+ .debug_str     0x00003f5a     0x299f common/libcommon.o
+                               0x6d8e (size before relaxing)
+ .debug_str     0x000068f9      0x25e disk/libdisk.o
+                                0x6d7 (size before relaxing)
+ .debug_str     0x00006b57      0x2cc drivers/dma/libdma.o
+                                0x3bb (size before relaxing)
+ .debug_str     0x00006e23      0x5a4 drivers/mmc/libmmc.o
+                                0xca8 (size before relaxing)
+ .debug_str     0x000073c7      0xc88 drivers/mtd/nand/libnand.o
+                               0x3b7d (size before relaxing)
+ .debug_str     0x0000804f       0x5d drivers/pcmcia/libpcmcia.o
+                                0x1f3 (size before relaxing)
+ .debug_str     0x000080ac       0x3d drivers/rtc/librtc.o
+                                 0xef (size before relaxing)
+ .debug_str     0x000080e9      0x248 drivers/serial/libserial.o
+                                0x702 (size before relaxing)
+ .debug_str     0x00008331      0x163 drivers/storage_type/libstorage_type.o
+                                0x81b (size before relaxing)
+ .debug_str     0x00008494      0x722 fs/fat/libfat.o
+                                0xfe9 (size before relaxing)
+ .debug_str     0x00008bb6      0x649 lib/libgeneric.o
+                               0x17f4 (size before relaxing)
+ .debug_str     0x000091ff      0x2fb lib/zlib/libz.o
+                                0x593 (size before relaxing)
+ .debug_str     0x000094fa      0x507 nand_sunxi/libnand(nand_for_uboot.o)
+                                0x759 (size before relaxing)
+ .debug_str     0x00009a01      0x200 nand_sunxi/libnand(nand_osal_uboot.o)
+                                0x421 (size before relaxing)
+ .debug_str     0x00009c01      0x12c nand_sunxi/libnand(nand_fspart.o)
+                                0x31f (size before relaxing)
+ .debug_str     0x00009d2d      0xc0d nand_sunxi/libnand(nand_format.o)
+                                0xf3d (size before relaxing)
+ .debug_str     0x0000a93a      0x33c nand_sunxi/libnand(logic_ctl.o)
+                                0xb74 (size before relaxing)
+ .debug_str     0x0000ac76      0x32d nand_sunxi/libnand(mapping.o)
+                                0xa7a (size before relaxing)
+ .debug_str     0x0000afa3      0x1f9 nand_sunxi/libnand(mapping_base.o)
+                                0x964 (size before relaxing)
+ .debug_str     0x0000b19c       0xee nand_sunxi/libnand(merge.o)
+                                0x824 (size before relaxing)
+ .debug_str     0x0000b28a       0x29 nand_sunxi/libnand(read_reclaim.o)
+                                0x67a (size before relaxing)
+ .debug_str     0x0000b2b3       0xa7 nand_sunxi/libnand(mbr.o)
+                                0x82c (size before relaxing)
+ .debug_str     0x0000b35a      0x353 nand_sunxi/libnand(nand_phy.o)
+                                0x83a (size before relaxing)
+ .debug_str     0x0000b6ad      0x1f2 nand_sunxi/libnand(nand_simple_r.o)
+                                0x6be (size before relaxing)
+ .debug_str     0x0000b89f       0xc3 nand_sunxi/libnand(nand_simple_w.o)
+                                0x4b0 (size before relaxing)
+ .debug_str     0x0000b962      0x285 nand_sunxi/libnand(nand_scan.o)
+                                0x6aa (size before relaxing)
+ .debug_str     0x0000bbe7       0x8b nand_sunxi/libnand(bad_manage.o)
+                                0x79a (size before relaxing)
+ .debug_str     0x0000bc72      0x5ea nand_sunxi/libnand(nfc_r.o)
+                                0x88a (size before relaxing)
+ .debug_str     0x0000c25c      0x1f3 nand_sunxi/libnand(nfc_w.o)
+                                0x46d (size before relaxing)
+ .debug_str     0x0000c44f       0xd4 nand_sunxi/libnand(nand_id.o)
+                                0x3ce (size before relaxing)
+ .debug_str     0x0000c523      0x182 board/allwinner/sun7i-evb/libsun7i-evb.o
+                                0x685 (size before relaxing)
+ .debug_str     0x0000c6a5       0x32 /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+                                0x11b (size before relaxing)
+ .debug_str     0x0000c6d7       0x9a .//libsmdt.a(cmd_update.o)
+                                0x1ce (size before relaxing)
+
+.debug_loc      0x00000000    0x353c4
+ .debug_loc     0x00000000      0x6f2 arch/arm/cpu/armv7/libarmv7.o
+ .debug_loc     0x000006f2     0x7514 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_loc     0x00007c06      0x984 arch/arm/lib/libarm.o
+ .debug_loc     0x0000858a     0xcb33 common/libcommon.o
+ .debug_loc     0x000150bd      0x8c0 disk/libdisk.o
+ .debug_loc     0x0001597d      0x194 drivers/dma/libdma.o
+ .debug_loc     0x00015b11     0x25e5 drivers/mmc/libmmc.o
+ .debug_loc     0x000180f6     0x6783 drivers/mtd/nand/libnand.o
+ .debug_loc     0x0001e879      0x283 drivers/serial/libserial.o
+ .debug_loc     0x0001eafc      0x28b drivers/storage_type/libstorage_type.o
+ .debug_loc     0x0001ed87     0x3034 fs/fat/libfat.o
+ .debug_loc     0x00021dbb     0x3f40 lib/libgeneric.o
+ .debug_loc     0x00025cfb     0x22bc lib/zlib/libz.o
+ .debug_loc     0x00027fb7     0x12a6 nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_loc     0x0002925d      0x357 nand_sunxi/libnand(nand_osal_uboot.o)
+ .debug_loc     0x000295b4      0x365 nand_sunxi/libnand(nand_fspart.o)
+ .debug_loc     0x00029919     0x2488 nand_sunxi/libnand(nand_format.o)
+ .debug_loc     0x0002bda1     0x123d nand_sunxi/libnand(logic_ctl.o)
+ .debug_loc     0x0002cfde      0xd01 nand_sunxi/libnand(mapping.o)
+ .debug_loc     0x0002dcdf      0x9b9 nand_sunxi/libnand(mapping_base.o)
+ .debug_loc     0x0002e698      0x8e0 nand_sunxi/libnand(merge.o)
+ .debug_loc     0x0002ef78       0x88 nand_sunxi/libnand(read_reclaim.o)
+ .debug_loc     0x0002f000      0x282 nand_sunxi/libnand(mbr.o)
+ .debug_loc     0x0002f282     0x18d6 nand_sunxi/libnand(nand_phy.o)
+ .debug_loc     0x00030b58      0xcd7 nand_sunxi/libnand(nand_simple_r.o)
+ .debug_loc     0x0003182f      0x680 nand_sunxi/libnand(nand_simple_w.o)
+ .debug_loc     0x00031eaf      0x2e6 nand_sunxi/libnand(nand_scan.o)
+ .debug_loc     0x00032195      0x1cf nand_sunxi/libnand(bad_manage.o)
+ .debug_loc     0x00032364     0x188d nand_sunxi/libnand(nfc_r.o)
+ .debug_loc     0x00033bf1     0x12b5 nand_sunxi/libnand(nfc_w.o)
+ .debug_loc     0x00034ea6      0x24a board/allwinner/sun7i-evb/libsun7i-evb.o
+ .debug_loc     0x000350f0       0x3e /home/server/sourcecode/a20evb_dvk/lichee/u-boot/arch/arm/lib/eabi_compat.o
+ .debug_loc     0x0003512e      0x296 .//libsmdt.a(cmd_update.o)
+
+.debug_ranges   0x00000000     0x3088
+ .debug_ranges  0x00000000       0xc0 arch/arm/cpu/armv7/libarmv7.o
+ .debug_ranges  0x000000c0      0x4b0 arch/arm/cpu/armv7/sunxi/libsunxi.o
+ .debug_ranges  0x00000570       0x30 arch/arm/lib/libarm.o
+ .debug_ranges  0x000005a0      0xa68 common/libcommon.o
+ .debug_ranges  0x00001008       0x30 disk/libdisk.o
+ .debug_ranges  0x00001038       0x18 drivers/dma/libdma.o
+ .debug_ranges  0x00001050      0x720 drivers/mmc/libmmc.o
+ .debug_ranges  0x00001770      0x5d0 drivers/mtd/nand/libnand.o
+ .debug_ranges  0x00001d40       0x60 drivers/serial/libserial.o
+ .debug_ranges  0x00001da0      0x408 fs/fat/libfat.o
+ .debug_ranges  0x000021a8      0x218 lib/libgeneric.o
+ .debug_ranges  0x000023c0       0x48 lib/zlib/libz.o
+ .debug_ranges  0x00002408      0x230 nand_sunxi/libnand(nand_for_uboot.o)
+ .debug_ranges  0x00002638      0x5a0 nand_sunxi/libnand(nand_format.o)
+ .debug_ranges  0x00002bd8      0x160 nand_sunxi/libnand(logic_ctl.o)
+ .debug_ranges  0x00002d38      0x1b0 nand_sunxi/libnand(mapping.o)
+ .debug_ranges  0x00002ee8       0x30 nand_sunxi/libnand(mapping_base.o)
+ .debug_ranges  0x00002f18       0x30 nand_sunxi/libnand(merge.o)
+ .debug_ranges  0x00002f48       0xf0 nand_sunxi/libnand(nand_simple_r.o)
+ .debug_ranges  0x00003038       0x18 nand_sunxi/libnand(nfc_r.o)
+ .debug_ranges  0x00003050       0x38 board/allwinner/sun7i-evb/libsun7i-evb.o
